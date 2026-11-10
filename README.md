@@ -19,7 +19,7 @@ Stars: 3 on a first correct attempt, 2 with a hint, 1 after a wrong attempt or a
 
 Open-answer questions accept **all valid values**, not only one sample. The game supports ordered pairs, intervals, prime-number answers and multiselect. The workbook's two descending sequences are displayed consistently from left to right; their numeric content is preserved. Written-answer and explanation exercises are adapted to interactive choices. Final answers are checked, not handwriting or calculation layout.
 
-The original PDF, its branding/artwork, names and identifying fields are **not** included. Source-page numbers in question data help map each exercise back to the supplied practice. No personal child details are required.
+The original workbook PDF is included unchanged at `assets/workbooks/grade-4-whole-numbers.pdf`, as explicitly requested, and linked from the portal and game. Its name/class/date fields are blank; no child-identifying entries were found. Source-page links open the relevant workbook page. No personal child details are required to play.
 
 ## Privacy
 
