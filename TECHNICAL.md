@@ -60,3 +60,10 @@ The unit suite checks all reference answers, accepted intervals, boundaries, num
 ## Publish
 
 GitHub Pages serves the `main` branch from the repository root. `.nojekyll` keeps the site as plain static files. No GitHub Actions workflow, package build, external font download or API key is needed.
+
+## Link previews
+
+- Both portal and game have absolute canonical and Open Graph URLs.
+- `assets/previews/portal.png` is a 1200×630 PNG kept below 300 KB.
+- Recreate it with `CHROME_BIN=/path/to/chrome node scripts/create-preview.mjs` after installing test dependencies.
+- Preview caches belong to messaging apps. Metadata/image verification does not prove a specific WhatsApp client refreshed its cache.
