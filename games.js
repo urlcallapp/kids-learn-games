@@ -1,0 +1,7 @@
+export const games=[{
+ id:'number-quest',
+ title:'מסע המספרים',
+ category:'חשבון · כיתה ד׳ · מספרים שלמים',
+ description:'12 תחנות ו־71 משימות: סדרות, ספרות, כפל, חילוק ושאלות לחשיבה. עם רמזים, הסברים וכוכבים.',
+ href:'./games/number-quest/',
+}];
