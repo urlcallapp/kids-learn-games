@@ -5,3 +5,5 @@
 .source-link{display:inline-block;color:var(--teal-dark);font-size:.85rem;font-weight:600;min-height:44px;padding:10px 0;text-underline-offset:4px}.workbook-link{margin-top:20px}.source-note a{display:inline-block;min-height:44px;padding:10px 0;text-underline-offset:3px}
 
 .scratch-tabs{display:flex;gap:10px;margin:14px 0}.scratch-tabs .button{flex:1;padding:10px}.scratch-tabs [aria-pressed=true]{background:var(--teal-dark);color:#fff}.draw-canvas{display:block;width:100%;height:300px;border:1px solid #aca4a1;border-radius:8px;touch-action:none;background:repeating-linear-gradient(to bottom,#fff 0,#fff 31px,var(--line) 31px,var(--line) 32px)}.draw-tools{display:flex;gap:20px;justify-content:space-between;font-size:.8rem}.scratch [hidden]{display:none}.scratch>p{margin-top:0}.scratch textarea{direction:rtl}.scratch input{font-size:18px}
+
+.repo-footer{max-width:1040px;margin:0 auto 24px;padding:0 24px;text-align:center}.repo-footer a{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:var(--ink-2,#585254);font-size:14px;text-decoration:underline;text-underline-offset:4px}.repo-footer img{object-fit:contain;mix-blend-mode:multiply}
