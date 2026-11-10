@@ -63,3 +63,26 @@ test('Test-prep game is a separate portal entry limited to material through page
  await page.getByRole('link',{name:'חזרה למרחב המשחקים'}).click();
  await expect(page.locator('.game-card')).toHaveCount(2);
 });
+test('Each game card has its own illustration and color; success celebration is a one-shot calm pop',async({page})=>{
+ await page.setViewportSize({width:390,height:844});
+ await page.goto('/');
+ const arts=page.locator('.game-card .game-art');
+ await expect(arts).toHaveCount(2);
+ const svgs=await arts.evaluateAll(es=>es.map(e=>e.querySelector('svg').outerHTML));
+ expect(svgs[0]).not.toBe(svgs[1]);
+ const bgs=await arts.evaluateAll(es=>es.map(e=>getComputedStyle(e).backgroundColor));
+ expect(bgs[0]).not.toBe(bgs[1]);
+ expect(await arts.evaluateAll(es=>es.every(e=>!e.querySelector('svg').outerHTML.includes('M25 55 34 34')))).toBeTruthy();
+ await page.goto('/games/number-quest/');
+ await page.locator('[data-topic=sequences]').click();
+ await answer(page,questions[0]);
+ const stars=page.locator('.feedback.correct .celebrate i');
+ await expect(stars).toHaveCount(3);
+ await expect(page.locator('.feedback.correct')).toBeVisible();
+ await page.waitForTimeout(1400);
+ await expect(stars.first()).toHaveCSS('opacity','0');
+ await page.emulateMedia({reducedMotion:'reduce'});
+ await page.locator('#next').click();
+ await answer(page,questions[1]);
+ expect(await page.locator('.feedback.correct .celebrate i').first().evaluate(el=>getComputedStyle(el).animationName)).toBe('none');
+});

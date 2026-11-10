@@ -6,6 +6,7 @@ export const games=[{
  category:'חשבון · כיתה ד׳ · מספרים שלמים',
  description:'12 תחנות ו־71 משימות: סדרות, ספרות, כפל, חילוק ושאלות לחשיבה. עם רמזים, הסברים וכוכבים.',
  cta:'יוצאים למסע',
+ art:{color:'#284b42',bg:'#73a89a',strong:'1 2 3',small:'מסלול של תגליות',svg:'<svg viewBox="0 0 80 80" width="70" height="70" fill="none" aria-hidden="true"><ellipse cx="40" cy="64" rx="26" ry="7" fill="#284b4233"/><path d="M8 62 Q24 40 40 52 T72 38" stroke="#284b42" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1 7"/><circle cx="8" cy="62" r="4" fill="#284b42"/><path d="M64 14v26" stroke="#284b42" stroke-width="3" stroke-linecap="round"/><path d="M64 15h15l-5 6 5 6H64z" fill="#284b42"/><circle cx="30" cy="30" r="9" stroke="#284b42" stroke-width="2.5"/><text x="30" y="34" text-anchor="middle" font-size="10" font-weight="700" fill="#284b42" font-family="inherit">7</text></svg>'},
  href:'./games/number-quest/',
  source:'./assets/workbooks/grade-4-whole-numbers.pdf',
 },{
@@ -16,6 +17,7 @@ export const games=[{
  category:'חשבון · כיתה ד׳ · הכנה למבחן',
  description:'36 משימות ב־6 תחנות לקראת המבחן, רק מהתוכן עד עמוד 14 בחוברת: סדרות, בניית מספרים, תחומים, ערך הספרה, עיגול, חיבור וחיסור.',
  cta:'מתחילים תרגול',
+ art:{color:'#7a5410',bg:'#eec25e',strong:'✓ 14',small:'אימון ממוקד',svg:'<svg viewBox="0 0 80 80" width="70" height="70" fill="none" aria-hidden="true"><rect x="18" y="10" width="40" height="52" rx="6" fill="#ffffffcc" stroke="#7a5410" stroke-width="2.5"/><path d="M30 8h16v8H30z" rx="3" fill="#7a5410"/><path d="M26 24h24M26 33h24" stroke="#7a5410" stroke-width="2.5" stroke-linecap="round"/><path d="M26 46l6 6 12-12" stroke="#7a5410" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="60" cy="58" r="13" fill="#7a5410"/><path d="M54 58l4 4 8-8" stroke="#eec25e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>'},
  href:'./games/test-prep/',
  source:'./assets/workbooks/grade-4-whole-numbers.pdf',
 }];
