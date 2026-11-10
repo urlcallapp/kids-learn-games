@@ -8,7 +8,7 @@ Static, Hebrew-first learning-games portal. This document covers implementation,
 
 - The site root is the games portal.
 - Each game has a real folder and its own `index.html`, so a direct game URL works on GitHub Pages, on refresh, and without client-side routing.
-- The first game lives at `games/number-quest/`.
+- The first game lives at `games/number-quest/`; the test-prep game (same workbook, printed pages up to 14 only) lives at `games/test-prep/`. Both use the shared `game.js` engine, which loads the dataset and page texts from the `data-config` module named on its script tag (resolved against the game page URL).
 - The portal has a button to copy the absolute URL of a specific game. If clipboard access is blocked, it shows a selectable link instead.
 
 ## First game
@@ -52,9 +52,9 @@ The unit suite checks all reference answers, accepted intervals, boundaries, num
 
 ## Add another game
 
-1. Create `games/<game-id>/index.html`, with relative asset paths that work under the repository base path.
-2. Add an entry to `games.js` (`id`, `title`, `category`, `description`, `href`).
-3. Use a separate versioned local-storage key for that game.
+1. Create `games/<game-id>/config.js` exporting `questions`, `topics`, `checkAnswer` and `meta` (page `title`, `eyebrow`, `intro` and a separate versioned local-storage `key`). A subset of an existing workbook comes from filtering `questions.js`, as `games/test-prep/config.js` does.
+2. Create `games/<game-id>/index.html`, with relative asset paths that work under the repository base path, loading `game.js` with `data-config="./config.js"`.
+3. Add an entry to `games.js` (`id`, `title`, `added`, `tags`, `category`, `description`, `cta`, `href`, optional `source`).
 4. Add answer and browser tests; verify phone sizes and direct links before publishing.
 
 ## Publish

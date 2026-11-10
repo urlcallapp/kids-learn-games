@@ -1,9 +1,21 @@
 export const games=[{
  id:'number-quest',
  title:'מסע המספרים',
+ added:'2026-11-10',
  tags:['חשבון','כיתה ד׳','מספרים שלמים'],
  category:'חשבון · כיתה ד׳ · מספרים שלמים',
  description:'12 תחנות ו־71 משימות: סדרות, ספרות, כפל, חילוק ושאלות לחשיבה. עם רמזים, הסברים וכוכבים.',
+ cta:'יוצאים למסע',
  href:'./games/number-quest/',
+ source:'./assets/workbooks/grade-4-whole-numbers.pdf',
+},{
+ id:'test-prep',
+ title:'הכנה למבחן',
+ added:'2026-11-10',
+ tags:['חשבון','כיתה ד׳','מספרים שלמים','הכנה למבחן'],
+ category:'חשבון · כיתה ד׳ · הכנה למבחן',
+ description:'36 משימות ב־6 תחנות לקראת המבחן, רק מהתוכן עד עמוד 14 בחוברת: סדרות, בניית מספרים, תחומים, ערך הספרה, עיגול, חיבור וחיסור.',
+ cta:'מתחילים תרגול',
+ href:'./games/test-prep/',
  source:'./assets/workbooks/grade-4-whole-numbers.pdf',
 }];
