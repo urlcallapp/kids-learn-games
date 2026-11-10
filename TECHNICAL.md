@@ -67,3 +67,7 @@ GitHub Pages serves the `main` branch from the repository root. `.nojekyll` keep
 - `assets/previews/portal.png` is a 1200×630 PNG kept below 300 KB.
 - Recreate it with `CHROME_BIN=/path/to/chrome node scripts/create-preview.mjs` after installing test dependencies.
 - Preview caches belong to messaging apps. Metadata/image verification does not prove a specific WhatsApp client refreshed its cache.
+
+## Portal search
+
+Each game defines `tags` in `games.js`. The tag filter is derived only from these entries. Free text matches all query words against title, category, description and tags; one selected tag further narrows results. Hebrew vowel marks are ignored. No-results state includes a reset, and changes announce result counts.
