@@ -15,7 +15,7 @@ Static, Hebrew-first learning-games portal. This document covers implementation,
 
 71 exercises in 12 stations: sequences, building numbers, intervals, place value, rounding, addition/subtraction, multiplication, division, primes, operation order, word problems and a final mixed challenge.
 
-Choose a topic or a six-question mixed round from six different topics. There is no timer and no penalty that ends a game. Each question has a hint, a worked explanation and optional scratch space. Skipped questions and answers that needed help can be practiced again at the end.
+Choose a topic or a six-question mixed round from six different topics. There is no timer and no penalty that ends a game. Each question has a hint, a worked explanation and optional freehand or typed scratch space. The canvas supports touch, mouse and pen with undo/clear, keeps strokes when resized, and prevents page scrolling only inside the drawing surface. No handwriting recognition is performed. Numeric answer fields request the device numeric keyboard with `inputmode="numeric"` and a numeric pattern; the browser and OS ultimately choose the keyboard. Text scratch space retains the normal keyboard. Skipped questions and answers that needed help can be practiced again at the end.
 
 Stars: 3 on a first correct attempt, 2 with a hint, 1 after a wrong attempt or a revealed solution. The best star score for each question is saved locally. Repeated answers cannot inflate the maximum score of 213 stars.
 
@@ -25,7 +25,7 @@ The original workbook PDF is included unchanged at `assets/workbooks/grade-4-who
 
 ## Privacy
 
-No sign-in, ads, analytics, paid services or application backend. Best scores stay in `localStorage` on the current browser and are not synchronized or sent anywhere. Scratch text lasts only for the current question. Multiple children using the same browser share that browser's progress. If browser storage is unavailable, the game still works and shows a warning. GitHub Pages itself serves the public files under GitHub's normal hosting policies.
+No sign-in, ads, analytics, paid services or application backend. Best scores stay in `localStorage` on the current browser and are not synchronized or sent anywhere. Scratch text and drawings last only for the current question. Multiple children using the same browser share that browser's progress. If browser storage is unavailable, the game still works and shows a warning. GitHub Pages itself serves the public files under GitHub's normal hosting policies.
 
 ## Run locally
 
