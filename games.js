@@ -20,4 +20,14 @@ export const games=[{
  art:{color:'#7a5410',bg:'#eec25e',strong:'✓ 14',small:'אימון ממוקד',svg:'<svg viewBox="0 0 80 80" width="70" height="70" fill="none" aria-hidden="true"><rect x="18" y="10" width="40" height="52" rx="6" fill="#ffffffcc" stroke="#7a5410" stroke-width="2.5"/><path d="M30 8h16v8H30z" rx="3" fill="#7a5410"/><path d="M26 24h24M26 33h24" stroke="#7a5410" stroke-width="2.5" stroke-linecap="round"/><path d="M26 46l6 6 12-12" stroke="#7a5410" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="60" cy="58" r="13" fill="#7a5410"/><path d="M54 58l4 4 8-8" stroke="#eec25e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>'},
  href:'./games/test-prep/',
  source:'./assets/workbooks/grade-4-whole-numbers.pdf',
+},{
+ id:'times-table',
+ title:'ממלכת הכפל',
+ added:'2026-11-11',
+ tags:['חשבון','כפל','לוח הכפל'],
+ category:'חשבון · לוח הכפל',
+ description:'10 תחנות ו־82 משימות לשליטה בלוח הכפל בעל פה: זיכרון ברק, מבט אחד וזוכרים, השלמות, נכון או לא, וסיפורי כפל.',
+ cta:'נכנסים לממלכה',
+ art:{color:'#4a3f73',bg:'#c3b4e6',strong:'9 × 9',small:'לוח הכפל בעל פה',svg:'<svg viewBox="0 0 80 80" width="70" height="70" fill="none" aria-hidden="true"><ellipse cx="40" cy="68" rx="26" ry="6" fill="#4a3f7333"/><rect x="16" y="24" width="48" height="40" rx="8" fill="#ffffffcc" stroke="#4a3f73" stroke-width="2.5"/><path d="M16 37h48M16 50h48M32 24v40M48 24v40" stroke="#4a3f73" stroke-width="2"/><path d="M21 28l6 6m0-6l-6 6" stroke="#4a3f73" stroke-width="2" stroke-linecap="round"/><path d="M37 41l6 6m0-6l-6 6" stroke="#4a3f73" stroke-width="2" stroke-linecap="round"/><path d="M53 54l6 6m0-6l-6 6" stroke="#4a3f73" stroke-width="2" stroke-linecap="round"/><path d="M24 12l7 7 9-10 9 10 7-7v9H24z" fill="#4a3f73"/></svg>'},
+ href:'./games/times-table/',
 }];

@@ -8,7 +8,7 @@ Static, Hebrew-first learning-games portal. This document covers implementation,
 
 - The site root is the games portal.
 - Each game has a real folder and its own `index.html`, so a direct game URL works on GitHub Pages, on refresh, and without client-side routing.
-- The first game lives at `games/number-quest/`; the test-prep game (same workbook, printed pages up to 14 only) lives at `games/test-prep/`. Both use the shared `game.js` engine, which loads the dataset and page texts from the `data-config` module named on its script tag (resolved against the game page URL).
+- The first game lives at `games/number-quest/`; the test-prep game (same workbook, printed pages up to 14 only) lives at `games/test-prep/`; the multiplication-table game (standalone dataset, no workbook) lives at `games/times-table/`. All use the shared `game.js` engine, which loads the dataset and page texts from the `data-config` module named on its script tag (resolved against the game page URL).
 - The portal has a button to copy the absolute URL of a specific game. If clipboard access is blocked, it shows a selectable link instead.
 
 ## First game
@@ -50,11 +50,17 @@ For an existing Chromium installation, set `CHROME_BIN=/path/to/chrome` when run
 
 The unit suite checks all reference answers, accepted intervals, boundaries, numeric formatting, primes and pair/multiselect validation. The browser suite completes all 71 questions through the real UI at phone size and tests errors, hints, skip/review, persistence, keyboard submission, direct entry, refresh and layouts at 320, 390 and 1280 pixels.
 
+## Multiplication-table game
+
+`games/times-table/config.js` is a standalone dataset (not a workbook subset): its own topics, questions and `checkAnswer`, importing only the `numberValue` helper from `questions.js`. Its questions have no `page`, so the engine shows no per-exercise workbook link for them, and its `meta.source` is `null`, so the map screen shows no workbook link and no workbook paragraph. Existing games keep those links because their `meta.source` is undefined and every question carries a `page`.
+
+Memory questions (`topic: flash`) set `flash: <seconds>`. The expression is covered after that delay and must be answered from memory; a peek button reveals it and counts as a hint (2 stars maximum), matching the existing star rules. Scoring, skip/review and progress storage behave exactly as in the other games.
+
 ## Add another game
 
 1. Create `games/<game-id>/config.js` exporting `questions`, `topics`, `checkAnswer` and `meta` (page `title`, `eyebrow`, `intro` and a separate versioned local-storage `key`). A subset of an existing workbook comes from filtering `questions.js`, as `games/test-prep/config.js` does.
 2. Create `games/<game-id>/index.html`, with relative asset paths that work under the repository base path, loading `game.js` with `data-config="./config.js"`.
-3. Add an entry to `games.js` (`id`, `title`, `added`, `tags`, `category`, `description`, `cta`, `href`, optional `source`).
+3. Add an entry to `games.js` (`id`, `title`, `added`, `tags`, `category`, `description`, `cta`, `href`, optional `source`). For a game without a source workbook set `source: null` in its `meta`.
 4. Add answer and browser tests; verify phone sizes and direct links before publishing.
 
 ## Publish
