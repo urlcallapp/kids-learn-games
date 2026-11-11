@@ -1,4 +1,4 @@
-import {games} from './games.js';
+import {games} from './games.js?v=2026-11-11-1';
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const formatDate=iso=>{const[y,m,d]=String(iso).split('-');return `${d}.${m}.${y}`;};
 const scene='<svg class="hero-scene-art" viewBox="0 0 1000 150" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><path d="M60 130 Q 260 60 470 105 T 900 70" fill="none" stroke="#284b42" stroke-opacity=".28" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 16"/><ellipse cx="905" cy="118" rx="58" ry="12" fill="#73a89a" opacity=".55"/><path d="M905 30v74" stroke="#284b42" stroke-width="5" stroke-linecap="round"/><path d="M905 32h38l-12 14 12 14h-38z" fill="#284b42"/><g fill="#ffffff"><ellipse cx="180" cy="42" rx="46" ry="16"/><ellipse cx="215" cy="32" rx="30" ry="14"/><ellipse cx="700" cy="26" rx="38" ry="13"/><ellipse cx="728" cy="18" rx="24" ry="11"/></g></svg>';

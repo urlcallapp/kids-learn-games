@@ -59,13 +59,15 @@ Memory questions (`topic: flash`) set `flash: <seconds>`. The expression is cove
 ## Add another game
 
 1. Create `games/<game-id>/config.js` exporting `questions`, `topics`, `checkAnswer` and `meta` (page `title`, `eyebrow`, `intro` and a separate versioned local-storage `key`). A subset of an existing workbook comes from filtering `questions.js`, as `games/test-prep/config.js` does.
-2. Create `games/<game-id>/index.html`, with relative asset paths that work under the repository base path, loading `game.js` with `data-config="./config.js"`.
+2. Create `games/<game-id>/index.html`, with relative asset paths that work under the repository base path, loading `game.js` with `data-config="./config.js"`. Keep the shared `?v=` version token on the `style.css`, `game.js` and `config.js` references (see "Publish").
 3. Add an entry to `games.js` (`id`, `title`, `added`, `tags`, `category`, `description`, `cta`, `href`, optional `source`). For a game without a source workbook set `source: null` in its `meta`.
 4. Add answer and browser tests; verify phone sizes and direct links before publishing.
 
 ## Publish
 
 GitHub Pages serves the `main` branch from the repository root. `.nojekyll` keeps the site as plain static files. No GitHub Actions workflow, package build, external font download or API key is needed.
+
+Pages sends `Cache-Control: max-age=600` for every file and the header cannot be customized. To keep updates reliable, every local `.js`/`.css` reference carries a shared site version token (`?v=...`) that is bumped in all files together on any code, style or dataset change. `tests/versioning.test.js` enforces this twice: all tokens must match, and a content fingerprint of the versioned files (`tests/site-fingerprint.txt`) must be refreshed on every intended change, so a forgotten bump fails the tests. Large stable assets (PDF, favicons, images) are left unversioned so they keep caching. After a push, a visitor may still see the previous HTML for up to about ten minutes (its cache lifetime); from then on, a normal reload always loads the current version of every file.
 
 ## Link previews
 

@@ -42,7 +42,7 @@ Read `README.md` (catalog) and `TECHNICAL.md` (scoring, privacy, tests, publishi
 ## Add a game safely
 
 1. Pick a `<game-id>` (lowercase, hyphens). Create `games/<game-id>/config.js` exporting `questions`, `topics`, `checkAnswer`, `meta` (with a **new** `key` like `kids-learn-games.<game-id>.v1`). Easiest: copy `games/test-prep/config.js` and change the filter. New exercises go in `questions.js` (check answers independently, add hint and explanation, accept all valid answers for open questions).
-2. Create `games/<game-id>/index.html` by copying `games/test-prep/index.html`: update title, description, canonical and Open Graph URLs and texts; keep relative asset paths and the `data-config="./config.js"` script tag.
+2. Create `games/<game-id>/index.html` by copying `games/test-prep/index.html`: update title, description, canonical and Open Graph URLs and texts; keep relative asset paths and the `data-config` script tag exactly as copied, including the shared `?v=` version token on `style.css`, `game.js` and `config.js` (see "Cache versioning" below).
 3. Append an entry to `games.js` with all fields above, today's date in `added`, its own `art`, and honest tags.
 4. Add the game to the `README.md` catalog table, and to `TECHNICAL.md` if it behaves differently.
 5. Add tests (below). Do not change another game's exercises, ids, storage key, URL or `added` date.
@@ -62,6 +62,10 @@ npm start                    # serve locally at http://127.0.0.1:4173 (needs HTT
 - `tests/test-prep.test.js` pins the test-prep subset (36 exercises, all `page<=14`, 6 topics, storage key differs). Copy its pattern for a new subset game.
 - `tests/e2e/game.spec.js` runs through the real UI: all 71 questions at phone size, hints/skip/review/scoring, storage failure, widths 320/390/1280, PDF link, link-preview metadata, portal search and tags, addition dates, return-to-portal button, per-game card art, one-shot success celebration, and the test-prep entry. Add a test for each new game's portal card, direct URL and scope. `SCREENSHOT_DIR` sets where visual-check images go.
 - Before pushing, both `npm test` and `npm run test:e2e` must pass. Do not weaken or delete existing tests to make a change pass.
+
+## Cache versioning
+
+GitHub Pages serves every file with `Cache-Control: max-age=600` and that header cannot be changed. HTML pages revalidate within about ten minutes on their own, but only a versioned URL guarantees the browser fetches changed code. Every local `.js`/`.css` reference (`index.html`, `portal.js`, `game.js`, each game's `index.html` and `config.js`) carries the same site version token, e.g. `./portal.js?v=2026-11-11-1`. **Whenever you change any shared code, style or dataset, bump the token to a new unique value in all of these files at once.** `tests/versioning.test.js` fails if tokens differ, if a reference is unversioned, or if a versioned file changed without a bump; when a change is intended, it prints the new fingerprint to record in `tests/site-fingerprint.txt` together with the new token. Large stable assets (the workbook PDF, favicons, images) stay unversioned so they keep caching well. Note the limit: a visitor whose cached HTML is still fresh can see the previous page for up to about ten minutes after a push; the versioned URLs make sure everything the HTML then loads is current.
 
 ## Rules
 
