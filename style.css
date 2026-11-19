@@ -14,3 +14,5 @@
 .flash-wrap{position:relative}
 .flash-cover{position:absolute;inset:0;border-radius:12px;background:var(--ground);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;padding:14px}
 .flash-label{font-weight:700;color:var(--secondary)}
+
+.passage{margin-bottom:12px;border-right:4px solid var(--teal)}

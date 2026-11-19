@@ -30,4 +30,14 @@ export const games=[{
  cta:'נכנסים לממלכה',
  art:{color:'#4a3f73',bg:'#c3b4e6',strong:'9 × 9',small:'לוח הכפל בעל פה',svg:'<svg viewBox="0 0 80 80" width="70" height="70" fill="none" aria-hidden="true"><ellipse cx="40" cy="68" rx="26" ry="6" fill="#4a3f7333"/><rect x="16" y="24" width="48" height="40" rx="8" fill="#ffffffcc" stroke="#4a3f73" stroke-width="2.5"/><path d="M16 37h48M16 50h48M32 24v40M48 24v40" stroke="#4a3f73" stroke-width="2"/><path d="M21 28l6 6m0-6l-6 6" stroke="#4a3f73" stroke-width="2" stroke-linecap="round"/><path d="M37 41l6 6m0-6l-6 6" stroke="#4a3f73" stroke-width="2" stroke-linecap="round"/><path d="M53 54l6 6m0-6l-6 6" stroke="#4a3f73" stroke-width="2" stroke-linecap="round"/><path d="M24 12l7 7 9-10 9 10 7-7v9H24z" fill="#4a3f73"/></svg>'},
  href:'./games/times-table/',
+},{
+ id:'english-grade4',
+ title:'מסע באנגלית',
+ added:'2026-11-19',
+ tags:['אנגלית','כיתה ד׳','הכנה למבחן'],
+ category:'אנגלית · כיתה ד׳ · הכנה למבחן',
+ description:'10 תחנות תרגול באנגלית: ביטויי היכרות, אוצר מילים, כתיבת מילים, השלמת משפטים ושיחות, וקריאת טקסט קצר עם Yes או No.',
+ cta:'מתחילים באנגלית',
+ art:{color:'#2d4f66',bg:'#a9cfe6',strong:'ABC',small:'אנגלית בכיתה ד׳',svg:'<svg viewBox="0 0 80 80" width="70" height="70" fill="none" aria-hidden="true"><ellipse cx="40" cy="68" rx="26" ry="6" fill="#2d4f6633"/><path d="M12 22h40a6 6 0 0 1 6 6v18a6 6 0 0 1-6 6H32l-10 9v-9H12a6 6 0 0 1-6-6V28a6 6 0 0 1 6-6z" fill="#ffffffcc" stroke="#2d4f66" stroke-width="2.5" stroke-linejoin="round"/><text x="32" y="43" text-anchor="middle" font-size="15" font-weight="700" fill="#2d4f66" font-family="inherit">Hi!</text><path d="M58 16h14a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5h-3v7l-7-7h-4a5 5 0 0 1-5-5V21a5 5 0 0 1 5-5z" fill="#2d4f66"/><text x="65" y="30" text-anchor="middle" font-size="10" font-weight="700" fill="#a9cfe6" font-family="inherit">A+</text></svg>'},
+ href:'./games/english-grade4/',
 }];

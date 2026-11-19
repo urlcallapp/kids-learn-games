@@ -79,3 +79,7 @@ Pages sends `Cache-Control: max-age=600` for every file and the header cannot be
 ## Portal search
 
 Each game defines `tags` in `games.js`. The tag filter is derived only from these entries. Free text matches all query words against title, category, description and tags; one selected tag further narrows results. Hebrew vowel marks are ignored. No-results state includes a reset, and changes announce result counts.
+
+## English game (`games/english-grade4/`)
+
+Standalone dataset like `times-table`: its own topics, questions and `checkAnswer`, no workbook and no `meta.source`. It extends the shared engine with three optional question fields: `input: 'text'` (a typed English answer, compared ignoring case, spaces and final punctuation), `ltr: true` (show English text left to right) and `passage` (a reading text shown above the question). `noDisplay: true` hides the display box. The names, school and town in the texts are invented. Storage key: `kids-learn-games.english-grade4.v1`.
