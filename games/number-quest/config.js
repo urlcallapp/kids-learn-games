@@ -1,2 +1,2 @@
-export {questions,topics,checkAnswer} from '../../questions.js?v=2026-11-19-3';
+export {questions,topics,checkAnswer} from '../../questions.js?v=2026-11-19-4';
 export const meta={key:'kids-learn-games.number-quest.v1',title:'מסע המספרים',eyebrow:'חשבון · כיתה ד׳',intro:'בכל תחנה מחכה גילוי חדש. נצבור כוכבים, ניעזר ברמזים ונמצא את הדרך שלנו.'};

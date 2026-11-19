@@ -124,6 +124,19 @@ q('master','מה פירוש?','family','משפחה','זה כולל אמא, אב�
 q('master','מה פירוש?','want','רוצה','I want a bike.','want = רוצה.',{choices:['לדבר','לעוף','רוצה','נחמד'],ltr:true});
 q('master','השלימו את השיחה','— Hello!  — Hi! ____?  — My name is Dan.',"What's your name",'מה השאלה שהתשובה שלה היא "My name is Dan"?','התשובה מספרת את שמו, ולכן השאלה היא What\'s your name?',{choices:["What's your name",'How old are you','Where do you live','Is it nice'],ltr:true,textDisplay:true});
 
+// הקראה: הדפדפן מקריא באנגלית בעזרת הקול המובנה שלו (ללא קבצים ושירותים חיצוניים).
+const isEnglish=t=>/[A-Za-z]/.test(t)&&!/[\u0590-\u05ff]/.test(t);
+const spoken=t=>t.replace(/—/g,' ').replace(/_{2,}/g,'blank').replace(/\.\.\./g,'blank').replace(/\s+/g,' ').trim();
+for(const q of all){
+ const parts=[];
+ if(q.passage)parts.push(spoken(q.passage));
+ if(isEnglish(q.display))parts.push(spoken(q.display));
+ if(parts.length)q.speak=parts;
+ if(q.choices&&q.choices.every(isEnglish)&&q.choices.length>1&&!(q.choices.join()==='Yes,No'))q.speakChoices=true;
+ if(typeof q.answer==='string'&&isEnglish(q.answer)&&!['Yes','No'].includes(q.answer)){
+  q.speakAnswer=q.topic==='fill'||q.topic==='card'?spoken(q.display.replace(/_{2,}/g,q.answer)):q.answer;
+ }
+}
 export const questions=all;
 const norm=s=>String(s).trim().replace(/[.!?,]+$/,'').replace(/\s+/g,' ').toLowerCase();
 export function checkAnswer(question,value){

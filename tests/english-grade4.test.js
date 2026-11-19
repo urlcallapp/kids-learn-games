@@ -54,3 +54,17 @@ test('Dan card texts agree with each other',()=>{
  const card=questions.filter(q=>q.topic==='card'&&q.display.startsWith('My name is Dan'));
  assert(card.length>=3&&card.every(q=>q.display.includes('ten years old')&&q.display.includes('two sisters')&&!/brother/.test(q.display)));
 });
+
+test('read-aloud data: English text is speakable, Hebrew-only items are not, answers are spoken after solving',()=>{
+ const by=id=>questions.find(q=>q.id===id);
+ assert.deepEqual(by('phrases-1').speak,["What's your name?"]);
+ assert(by('words-a-1').speakChoices===undefined&&by('words-b-1').speak);
+ assert.equal(by('fill-1').speak[0],'My blank is big and has a red door.');
+ assert.equal(by('fill-1').speakAnswer,'My house is big and has a red door.');
+ assert.equal(by('spell-1').speak,undefined);
+ assert.equal(by('spell-1').speakAnswer,'teacher');
+ assert.equal(by('yesno-1').speakAnswer,undefined);
+ assert(by('yesno-1').speak.length===2&&by('yesno-1').speak[0].includes('Maya'));
+ assert(by('dialogue-1').speakChoices===true);
+ for(const q of questions){for(const t of [].concat(q.speak||[],q.speakAnswer||[]))assert(!/[\u0590-\u05ff_]/.test(t)&&t.length>0,q.id);}
+});

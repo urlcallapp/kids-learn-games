@@ -16,3 +16,4 @@
 .flash-label{font-weight:700;color:var(--secondary)}
 
 .passage{margin-bottom:12px;border-right:4px solid var(--teal)}
+.speak-row{display:flex;gap:18px;flex-wrap:wrap;margin-top:8px}
