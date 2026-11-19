@@ -33,3 +33,24 @@ test('game is registered and public files carry no personal details',()=>{
  const text=['games/english-grade4/config.js','games/english-grade4/index.html','games.js'].map(f=>readFileSync(f,'utf8')).join('\n');
  for(const bad of ['איתן','Eitan','Nadav','נדב','Reut','Zemer','Hod Hasharon','Kfar Saba','הוד השרון','כפר סבא'])assert(!text.includes(bad),bad);
 });
+
+test('yes/no statements are consistent with the passage text',()=>{
+ const yn=questions.filter(q=>q.topic==='yesno');
+ const p=yn[0].passage;
+ assert(yn.every(q=>q.passage===p));
+ assert(/nine years old/.test(p)&&/2 brothers/.test(p)&&/rabbit/.test(p)&&/parrot/.test(p)&&/Sunday/.test(p));
+ assert(!/ten years old|Monday|dog|3 brothers/.test(p));
+ const get=t=>yn.find(q=>q.display===t).answer;
+ assert.equal(get('Maya is nine years old.'),'Yes');
+ assert.equal(get('Maya has a rabbit.'),'Yes');
+ assert.equal(get('Maya wants a rabbit.'),'No');
+ assert.equal(get('Maya has 2 sisters.'),'No');
+ assert.equal(get('Maya has a test on Sunday.'),'Yes');
+ assert.equal(get('Maya is in grade five.'),'No');
+ assert.equal(get('Maya has one brother.'),'No');
+ assert.equal(get('Maya lives in Blue Town.'),'Yes');
+});
+test('Dan card texts agree with each other',()=>{
+ const card=questions.filter(q=>q.topic==='card'&&q.display.startsWith('My name is Dan'));
+ assert(card.length>=3&&card.every(q=>q.display.includes('ten years old')&&q.display.includes('two sisters')&&!/brother/.test(q.display)));
+});

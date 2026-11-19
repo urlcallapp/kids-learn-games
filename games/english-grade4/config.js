@@ -89,11 +89,11 @@ cardQ('grade','בכיתה ד׳ אומרים: ... four.','I am in grade four = א
 cardQ('town','איפה גרים? מקום קטן ליד הים.','I live in a town near the sea = אני גר בעיירה ליד הים.');
 cardQ('house','מה שלי לבן? מקום שגרים בו.','My house is white = הבית שלי לבן.');
 q('card',bank,'Birds can ____ in the sky. Dan likes to watch them.','fly','מה ציפורים עושות בשמיים?','Birds can fly = ציפורים יכולות לעוף.',{choices:['house','grade','talk','fly','town'],ltr:true,textDisplay:true});
-q('card',bank,'Look! A ____ is in the tree.','bird','בעל חיים עם כנפיים שיכול לדבר.','a green bird = ציפור ירוקה.',{choices:['house','bird','fly','grade','town'],ltr:true,textDisplay:true});
+q('card',bank,'Look! A ____ is in the tree.','bird','בעל חיים עם כנפיים שיכול לדבר.','A bird is in the tree = ציפור על העץ.',{choices:['house','bird','fly','grade','town'],ltr:true,textDisplay:true});
 q('card',bank,'Dan and his friends like to ____ after school.','talk','מה עושים עם חברים בעזרת מילים?','like to talk = אוהבים לדבר.',{choices:['house','grade','bird','talk','town'],ltr:true,textDisplay:true});
 
 // תחנה 8: Yes / No
-const maya='Hello, my name is Maya. I am ten years old and I am in grade four. I go to "Moon" School. I live in Blue Town. I have 2 brothers. I have a rabbit and I want a parrot. My English teacher is nice. I have a test on Sunday.';
+const maya='Hello, my name is Maya. I am nine years old and I am in grade four. I go to "Moon" School. I live in Blue Town. I have 2 brothers. I have a rabbit and I want a parrot. My English teacher is nice. I have a test on Sunday.';
 const yn=(stmt,ans,he)=>q('yesno','קראו את הטקסט והחליטו: Yes או No?',stmt,ans,'חזרו לטקסט ובדקו את המשפט מילה במילה.',he,{choices:['Yes','No'],ltr:true,textDisplay:true,passage:maya});
 yn('Maya is nine years old.','Yes','כתוב I am nine years old, לכן Yes.');
 yn('Maya has a rabbit.','Yes','כתוב I have a rabbit, לכן Yes.');

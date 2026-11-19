@@ -1,4 +1,4 @@
-import {setupDrawing} from './drawing.js?v=2026-11-19-2';
+import {setupDrawing} from './drawing.js?v=2026-11-19-3';
 const script=document.querySelector('script[type="module"][data-config]');
 const {questions,topics,checkAnswer,meta}=await import(new URL(script.dataset.config,document.baseURI));
 let cleanupDrawing=()=>{};
