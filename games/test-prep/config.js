@@ -1,4 +1,4 @@
-import {questions as all,topics as allTopics,checkAnswer} from '../../questions.js?v=2026-11-19-1';
+import {questions as all,topics as allTopics,checkAnswer} from '../../questions.js?v=2026-11-19-2';
 export const questions=all.filter(q=>q.page<=14);
 export const topics=allTopics.filter(t=>questions.some(q=>q.topic===t.id));
 export {checkAnswer};
