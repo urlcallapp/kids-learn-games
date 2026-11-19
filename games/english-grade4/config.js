@@ -65,25 +65,25 @@ fill('A bird can ____.','fly',['grade','fly','house','town'],'מה ציפור ע
 fill('I like to ____ with my friends.','talk',['house','bird','talk','grade'],'מה עושים עם חברים בעזרת מילים?','(אני אוהב לדבר עם החברים שלי.)');
 fill('I live in a small ____. Everyone knows everyone.','town',['town','bird','fly','grade'],'מקום קטן שבו כולם מכירים.','(אני גר בעיירה קטנה. כולם מכירים את כולם.)');
 fill('My English ____ is nice.','teacher',['teacher','brother','lesson','family'],'מי מלמד אותנו בבית הספר?','(המורה שלי לאנגלית נחמדה.)');
-fill('I have one ____ and one sister.','brother',['friend','brother','teacher','school'],'אחות היא sister. מה זה אח?','(יש לי אח אחד ואחות אחת.)');
+fill('I have two sisters and one ____.','brother',['friend','brother','teacher','school'],'אחות היא sister. מה זה אח?','(יש לי שתי אחיות ואח אחד.)');
 fill('We have an English ____ today.','lesson',['bird','lesson','house','sister'],'מה יש בבית הספר לפי מערכת השעות?','(יש לנו היום שיעור אנגלית.)');
 fill('I go to a new ____. It is big.','school',['school','sister','bird','fly'],'לאן הולכים כל בוקר ללמוד?','(אני הולך לבית ספר חדש. הוא גדול.)');
 fill('My friend is ____. He helps me.','nice',['new','nice','town','want'],'איך קוראים לאדם טוב שעוזר? ');
 
 // תחנה 6: שיחות
 const dlg=(topicPrompt,display,answer,choices,hint,explanation)=>q('dialogue',topicPrompt,display,answer,hint,explanation,{choices,ltr:true,textDisplay:true});
-dlg('מה עונים?',"— What's your name?",'My name is Dan.',['I live in Green Town.',"I'm nine years old.",'My name is Dan.','I go to Sunrise School.'],'השאלה היא על שם.',"What's your name? = איך קוראים לך? עונים: My name is...");
-dlg('מה עונים?','— Where do you live?','I live in Green Town.',['I live in Green Town.','My name is Dan.',"I'm nine years old.",'I have one brother.'],'השאלה היא על מקום מגורים.','Where do you live? = איפה אתה גר? עונים: I live in...');
-dlg('מה עונים?','— How old are you?',"I'm nine years old.",["I'm nine years old.",'I live in Green Town.','My name is Dan.','I want a cat.'],'השאלה היא על גיל.',"How old are you? = בן כמה אתה? עונים: I'm ... years old.");
-dlg('איזו שאלה חסרה?','— ____   — I live in Blue Town.','Where do you live?',["What's your name?",'Where do you live?','How old are you?','Do you want a cat?'],'התשובה אומרת איפה גרים.','התשובה I live in... מתאימה לשאלה Where do you live?');
+dlg('מה עונים?',"— What's your name?",'My name is Dan.',['I live in Green Town.',"I'm ten years old.",'My name is Dan.','I go to Sunrise School.'],'השאלה היא על שם.',"What's your name? = איך קוראים לך? עונים: My name is...");
+dlg('מה עונים?','— Where do you live?','I live in Green Town.',['I live in Green Town.','My name is Dan.',"I'm ten years old.",'I have one brother.'],'השאלה היא על מקום מגורים.','Where do you live? = איפה אתה גר? עונים: I live in...');
+dlg('מה עונים?','— How old are you?',"I'm ten years old.",["I'm ten years old.",'I live in Green Town.','My name is Dan.','I want a bike.'],'השאלה היא על גיל.',"How old are you? = בן כמה אתה? עונים: I'm ... years old.");
+dlg('איזו שאלה חסרה?','— ____   — I live in Blue Town.','Where do you live?',["What's your name?",'Where do you live?','How old are you?','Do you want a bike?'],'התשובה אומרת איפה גרים.','התשובה I live in... מתאימה לשאלה Where do you live?');
 dlg('איזו שאלה חסרה?','— ____   — My name is Maya.',"What's your name?",['How old are you?',"What's your name?",'Where do you live?','Is she nice?'],'התשובה אומרת איך קוראים לי.','התשובה My name is... מתאימה לשאלה What\'s your name?');
 dlg('איזו שאלה חסרה?','— ____   — I\'m ten years old.','How old are you?',['Where do you live?',"What's your name?",'How old are you?','Do you have a dog?'],'התשובה מזכירה גיל.',"התשובה I'm ... years old מתאימה לשאלה How old are you?");
 dlg('איזו תשובה מתאימה?','— Where do you live?','I live in a small town.',['My name is Omer.','I live in a small town.','I am ten years old.','I have two brothers.'],'חפשו את המשפט שמתחיל ב־I live.','I live in... עונה על Where do you live?');
-dlg('איזו תשובה מתאימה?','— How old are you?','I am nine years old.',['I am nine years old.','I live in a house.','My teacher is nice.','I go to school.'],'חפשו את המשפט עם years old.','I am ... years old עונה על How old are you?');
+dlg('איזו תשובה מתאימה?','— How old are you?','I am ten years old.',['I am ten years old.','I live in a house.','My teacher is nice.','I go to school.'],'חפשו את המשפט עם years old.','I am ... years old עונה על How old are you?');
 
 // תחנה 7: כרטיס פרטים אישיים (טקסט דמיוני עם בנק מילים)
 const bank='בנק מילים: house, grade, bird, talk, fly, town';
-const cardText=(blank)=>`My name is Dan. I am nine years old and I am in ${blank==='grade'?'____':'grade'} four. I go to "Sunrise" School. I live in a ${blank==='town'?'____':'town'} near the sea. My ${blank==='house'?'____':'house'} is white. I have one brother and one sister. My teacher is nice.`;
+const cardText=(blank)=>`My name is Dan. I am ten years old and I am in ${blank==='grade'?'____':'grade'} four. I go to "Sunrise" School. I live in a ${blank==='town'?'____':'town'} near the sea. My ${blank==='house'?'____':'house'} is white. I have two sisters. My teacher is nice.`;
 const cardQ=(blank,hint,explanation)=>q('card',bank,cardText(blank),blank,hint,explanation,{choices:['house','grade','bird','talk','fly','town'],ltr:true,textDisplay:true});
 cardQ('grade','בכיתה ד׳ אומרים: ... four.','I am in grade four = אני בכיתה ד׳.');
 cardQ('town','איפה גרים? מקום קטן ליד הים.','I live in a town near the sea = אני גר בעיירה ליד הים.');
@@ -93,35 +93,35 @@ q('card',bank,'Look! A ____ is in the tree.','bird','בעל חיים עם כנפ
 q('card',bank,'Dan and his friends like to ____ after school.','talk','מה עושים עם חברים בעזרת מילים?','like to talk = אוהבים לדבר.',{choices:['house','grade','bird','talk','town'],ltr:true,textDisplay:true});
 
 // תחנה 8: Yes / No
-const maya='Hello, my name is Maya. I am ten years old and I am in grade four. I go to "Moon" School. I live in Blue Town. I have 3 brothers and one sister. I have a dog and I want a cat. My English teacher is nice. I have a test on Monday.';
+const maya='Hello, my name is Maya. I am ten years old and I am in grade four. I go to "Moon" School. I live in Blue Town. I have 2 brothers. I have a rabbit and I want a parrot. My English teacher is nice. I have a test on Sunday.';
 const yn=(stmt,ans,he)=>q('yesno','קראו את הטקסט והחליטו: Yes או No?',stmt,ans,'חזרו לטקסט ובדקו את המשפט מילה במילה.',he,{choices:['Yes','No'],ltr:true,textDisplay:true,passage:maya});
-yn('Maya is ten years old.','Yes','כתוב I am ten years old, לכן Yes.');
-yn('Maya has a dog.','Yes','כתוב I have a dog, לכן Yes.');
-yn('Maya wants a dog.','No','יש לה כלב והיא רוצה חתול (I want a cat), לכן No.');
+yn('Maya is nine years old.','Yes','כתוב I am nine years old, לכן Yes.');
+yn('Maya has a rabbit.','Yes','כתוב I have a rabbit, לכן Yes.');
+yn('Maya wants a rabbit.','No','יש לה ארנב אבל היא רוצה תוכי (I want a parrot), לכן No.');
 yn('Maya lives in Blue Town.','Yes','כתוב I live in Blue Town, לכן Yes.');
-yn('Maya has 3 sisters.','No','יש לה 3 אחים ואחות אחת, לכן No.');
-yn('Maya has a test on Monday.','Yes','כתוב I have a test on Monday, לכן Yes.');
+yn('Maya has 2 sisters.','No','יש לה 2 אחים (2 brothers) ואין אחיות, לכן No.');
+yn('Maya has a test on Sunday.','Yes','כתוב I have a test on Sunday, לכן Yes.');
 yn('Maya is in grade five.','No','כתוב grade four, כלומר כיתה ד׳, לכן No.');
-yn('Maya has one brother.','No','יש לה 3 אחים (3 brothers), לכן No.');
+yn('Maya has one brother.','No','יש לה 2 אחים (2 brothers), לכן No.');
 
 // תחנה 9: בוחרים משפט נכון
 const S=(prompt,answer,choices,hint,exp)=>q('sentences',prompt,'',answer,hint,exp,{choices,ltr:true,textDisplay:true,noDisplay:true});
-S('איך כותבים: "אני בן תשע"?','I am nine years old.',['I have nine years old.','I am nine years old.','I am nine year old.','I nine years old.'],'באנגלית אומרים I am ... ולא I have ...','אומרים I am nine years old.');
+S('איך כותבים: "אני בן עשר"?','I am ten years old.',['I have ten years old.','I am ten years old.','I am ten year old.','I ten years old.'],'באנגלית אומרים I am ... ולא I have ...','אומרים I am ten years old.');
 S('איך כותבים: "קוראים לי דן"?','My name is Dan.',['My name Dan.','I name is Dan.','My name is Dan.','Name is my Dan.'],'מתחילים ב־My name is.','אומרים My name is Dan.');
 S('איך כותבים: "אני גר בעיירה"?','I live in a town.',['I live on town.','I living in town.','I live in a town.','I am live in a town.'],'אומרים I live in.','אומרים I live in a town.');
-S('איך כותבים: "יש לי אח אחד ואחות אחת"?','I have one brother and one sister.',['I am one brother and one sister.','I have one brother and one sister.','I have one sister and brother one.','I one brother have.'],'אומרים I have ... כשיש לנו משהו.','אומרים I have one brother and one sister.');
+S('איך כותבים: "יש לי שתי אחיות"?','I have two sisters.',['I am two sisters.','I have two sisters.','I have sisters two.','I two sisters have.'],'אומרים I have ... כשיש לנו משהו.','אומרים I have two sisters.');
 S('איך כותבים: "אני לומד בבית ספר שמש"?','I go to Sunrise School.',['I go to Sunrise School.','I go Sunrise School.','I going to Sunrise School.','I am to Sunrise School.'],'אומרים I go to ... School.','אומרים I go to Sunrise School.');
 S('איך כותבים: "המורה שלי נחמדה"?','My teacher is nice.',['My teacher nice.','My teacher is nice.','Teacher my is nice.','My teacher are nice.'],'צריך את המילה is באמצע.','אומרים My teacher is nice.');
-S('איך כותבים: "אני רוצה חתול"?','I want a cat.',['I want a cat.','I wants a cat.','I am want a cat.','I a cat want.'],'אחרי I לא מוסיפים s לפועל.','אומרים I want a cat.');
+S('איך כותבים: "אני רוצה אופניים"?','I want a bike.',['I want a bike.','I wants a bike.','I am want a bike.','I a bike want.'],'אחרי I לא מוסיפים s לפועל.','אומרים I want a bike.');
 
 // תחנה 10: אתגר האלופים
 q('master','איך שואלים "איפה אתה גר"?','בחרו את השאלה הנכונה',"Where do you live?",'מתחילים ב־Where.','Where = איפה.',{choices:["What's your name?",'Where do you live?','How old are you?','Where is your name?'],noDisplay:true,ltr:true});
-q('master','מה פירוש המשפט?','I am nine years old and I am in grade four.','אני בן תשע ואני בכיתה ד׳','years old = שנים, grade = כיתה.','אני בן תשע ואני בכיתה ד׳.',{choices:['אני בן תשע ואני בכיתה ד׳','יש לי תשעה אחים ואני בכיתה ד׳','אני בן ארבע ואני בכיתה ט׳','אני גר בעיירה ואני בכיתה ד׳'],ltr:false});
+q('master','מה פירוש המשפט?','I am ten years old and I am in grade four.','אני בן עשר ואני בכיתה ד׳','years old = שנים, grade = כיתה.','אני בן עשר ואני בכיתה ד׳.',{choices:['אני בן עשר ואני בכיתה ד׳','יש לי עשרה אחים ואני בכיתה ד׳','אני בן שבע ואני בכיתה ט׳','אני גר בעיירה ואני בכיתה ד׳'],ltr:false});
 q('master','איזה משפט נכון?','בחרו','My English teacher is nice.',"מתחילים ב־My ואחריו teacher.",'My English teacher is nice = המורה שלי לאנגלית נחמדה.',{choices:['English teacher my is nice.','My English teacher is nice.','My English teacher nice is.','Teacher English my nice.'],noDisplay:true,ltr:true});
 q('master','כתבו באנגלית: ציפור','ציפור','bird','האות הראשונה היא b.','ציפור באנגלית: bird.',{input:'text'});
 q('master','כתבו באנגלית: לעוף','לעוף','fly','המילה קצרה וצריך בה y.','לעוף באנגלית: fly.',{input:'text'});
 q('master','מה פירוש?','family','משפחה','זה כולל אמא, אבא, אח ואחות.','family = משפחה.',{choices:['חבר','משפחה','שיעור','עיירה'],ltr:true});
-q('master','מה פירוש?','want','רוצה','I want a cat.','want = רוצה.',{choices:['לדבר','לעוף','רוצה','נחמד'],ltr:true});
+q('master','מה פירוש?','want','רוצה','I want a bike.','want = רוצה.',{choices:['לדבר','לעוף','רוצה','נחמד'],ltr:true});
 q('master','השלימו את השיחה','— Hello!  — Hi! ____?  — My name is Dan.',"What's your name",'מה השאלה שהתשובה שלה היא "My name is Dan"?','התשובה מספרת את שמו, ולכן השאלה היא What\'s your name?',{choices:["What's your name",'How old are you','Where do you live','Is it nice'],ltr:true,textDisplay:true});
 
 export const questions=all;
