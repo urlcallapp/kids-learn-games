@@ -17,3 +17,7 @@
 
 .passage{margin-bottom:12px;border-right:4px solid var(--teal)}
 .speak-row{display:flex;gap:18px;flex-wrap:wrap;margin-top:8px}
+
+/* Optional workbook reading area. Other games retain their original layout. */
+.map-section:not([data-section="all"]){margin-bottom:32px}.section-intro{margin:-8px 0 20px;color:var(--secondary);font-size:.95rem}.workbook-zone{padding:24px;border:2px solid #dfc875;border-radius:24px;background:#fbf5df}.workbook-zone .topic-icon{background:#f6ecd4;color:#7a5410}.reading-intro .passage,.reading-source .passage{white-space:pre-line;margin-top:20px}.reading-intro>p{margin-bottom:20px}.reading-intro #start-reading-challenges{display:flex;width:100%;margin-top:20px}.reading-source{margin-bottom:18px;border:1px solid var(--line);border-radius:12px;padding:12px 16px}.reading-source summary{cursor:pointer;min-height:44px;align-content:center;font-weight:600;color:var(--teal-dark)}
+@media(max-width:767px){.workbook-zone{padding:16px 10px}.workbook-zone>.section-head{flex-direction:column;gap:8px}.workbook-zone h2{font-size:1.2rem}.reading-intro .story{padding:16px;font-size:1rem}}

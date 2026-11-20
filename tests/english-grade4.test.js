@@ -5,7 +5,8 @@ import {questions,topics,meta,checkAnswer} from '../games/english-grade4/config.
 import {games} from '../games.js';
 
 test('English grade 4 game is standalone, isolated and well formed',()=>{
- assert.equal(topics.length,10);
+ assert.equal(topics.length,15);
+ assert.equal(questions.filter(q=>!q.topic.startsWith('wb-')).length,99);
  assert(topics.every(t=>questions.some(q=>q.topic===t.id)));
  assert.equal(new Set(questions.map(q=>q.id)).size,questions.length);
  assert.equal(meta.key,'kids-learn-games.english-grade4.v1');

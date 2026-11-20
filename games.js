@@ -36,7 +36,7 @@ export const games=[{
  added:'2026-11-19',
  tags:['אנגלית','כיתה ד׳','הכנה למבחן'],
  category:'אנגלית · כיתה ד׳ · הכנה למבחן',
- description:'10 תחנות תרגול באנגלית: ביטויי היכרות, אוצר מילים, כתיבת מילים, השלמת משפטים ושיחות, וקריאת טקסט קצר עם Yes או No.',
+ description:'15 תחנות תרגול באנגלית: עשר תחנות חזרה על הסיכום ואזור נפרד לחוברת הצהובה עם קריאה ומשחקי הבנה, בתים וכרטיסי היכרות.',
  cta:'מתחילים באנגלית',
  art:{color:'#2d4f66',bg:'#a9cfe6',strong:'ABC',small:'אנגלית בכיתה ד׳',svg:'<svg viewBox="0 0 80 80" width="70" height="70" fill="none" aria-hidden="true"><ellipse cx="40" cy="68" rx="26" ry="6" fill="#2d4f6633"/><path d="M12 22h40a6 6 0 0 1 6 6v18a6 6 0 0 1-6 6H32l-10 9v-9H12a6 6 0 0 1-6-6V28a6 6 0 0 1 6-6z" fill="#ffffffcc" stroke="#2d4f66" stroke-width="2.5" stroke-linejoin="round"/><text x="32" y="43" text-anchor="middle" font-size="15" font-weight="700" fill="#2d4f66" font-family="inherit">Hi!</text><path d="M58 16h14a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5h-3v7l-7-7h-4a5 5 0 0 1-5-5V21a5 5 0 0 1 5-5z" fill="#2d4f66"/><text x="65" y="30" text-anchor="middle" font-size="10" font-weight="700" fill="#a9cfe6" font-family="inherit">A+</text></svg>'},
  href:'./games/english-grade4/',

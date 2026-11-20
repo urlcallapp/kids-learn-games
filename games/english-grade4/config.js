@@ -1,3 +1,4 @@
+import {workbookTopics,addWorkbook} from './workbook.js?v=2026-11-20-1';
 // אנגלית כיתה ד׳ — הכנה למבחן: אוצר מילים, ביטויים, השלמת משפטים והבנת הנקרא קצרה.
 // משחק עצמאי עם מאגר משלו. כל השמות והפרטים בטקסטים הם דמיוניים.
 export const topics=[
@@ -12,6 +13,8 @@ export const topics=[
  ['sentences','בונים משפט נכון','≡','בוחרים את המשפט הנכון באנגלית'],
  ['master','אתגר האלופים','⚑','משלבים את כל מה שלמדנו']
 ].map(([id,title,icon,description])=>({id,title,icon,description}));
+
+topics.push(...workbookTopics);
 
 const all=[];
 function q(topic,prompt,display,answer,hint,explanation,extra={}) {all.push({id:`${topic}-${all.filter(x=>x.topic===topic).length+1}`,topic,prompt,display,answer,hint,explanation,...extra});}
@@ -124,6 +127,9 @@ q('master','מה פירוש?','family','משפחה','זה כולל אמא, אב�
 q('master','מה פירוש?','want','רוצה','I want a bike.','want = רוצה.',{choices:['לדבר','לעוף','רוצה','נחמד'],ltr:true});
 q('master','השלימו את השיחה','— Hello!  — Hi! ____?  — My name is Dan.',"What's your name",'מה השאלה שהתשובה שלה היא "My name is Dan"?','התשובה מספרת את שמו, ולכן השאלה היא What\'s your name?',{choices:["What's your name",'How old are you','Where do you live','Is it nice'],ltr:true,textDisplay:true});
 
+addWorkbook(q);
+for(const item of all.filter(q=>q.topic.startsWith('wb-')))item.reading=true;
+
 // הקראה: הדפדפן מקריא באנגלית בעזרת הקול המובנה שלו (ללא קבצים ושירותים חיצוניים).
 const isEnglish=t=>/[A-Za-z]/.test(t)&&!/[\u0590-\u05ff]/.test(t);
 const spoken=t=>t.replace(/—/g,' ').replace(/_{2,}/g,'blank').replace(/\.\.\./g,'blank').replace(/\s+/g,' ').trim();
@@ -134,7 +140,7 @@ for(const q of all){
  if(parts.length)q.speak=parts;
  if(q.choices&&q.choices.every(isEnglish)&&q.choices.length>1&&!(q.choices.join()==='Yes,No'))q.speakChoices=true;
  if(typeof q.answer==='string'&&isEnglish(q.answer)&&!['Yes','No'].includes(q.answer)){
-  q.speakAnswer=q.topic==='fill'||q.topic==='card'?spoken(q.display.replace(/_{2,}/g,q.answer)):q.answer;
+  q.speakAnswer=q.topic==='fill'||q.topic==='card'||(q.reading&&q.display.includes('____'))?spoken(q.display.replace(/_{2,}/g,q.answer)):q.answer;
  }
 }
 export const questions=all;
@@ -143,4 +149,4 @@ export function checkAnswer(question,value){
  if(question.input==='text')return norm(value)===norm(question.answer);
  return value===question.answer;
 }
-export const meta={key:'kids-learn-games.english-grade4.v1',title:'מסע באנגלית',eyebrow:'אנגלית · כיתה ד׳ · הכנה למבחן',intro:'מתכוננים למבחן באנגלית: ביטויי היכרות, אוצר מילים, כתיבת מילים, השלמת משפטים וקריאת טקסט קצר. המשחק מבוסס על סיכום החומר, ואינו כולל את קטע הקריאה מהחוברת הצהובה.',source:null};
+export const meta={key:'kids-learn-games.english-grade4.v1',title:'מסע באנגלית',eyebrow:'אנגלית · כיתה ד׳ · הכנה למבחן',intro:'מתכוננים למבחן באנגלית: ביטויי היכרות, אוצר מילים, כתיבת מילים, השלמת משפטים וקריאת טקסט קצר. כולל את החוברת הצהובה באזור נפרד: קוראים סיפור ומשחקים באתגרי הבנה, בתים וכרטיסי היכרות.',source:null,sections:[{id:'workbook',title:'החוברת הצהובה · קוראים ומשחקים',description:'אזור חדש ונפרד: קודם מכירים את הסיפור, ואז פותרים את האתגרים. אפשר לחזור לטקסט בכל משימה.'},{id:'review',title:'חזרה על סיכום החומר',description:'כל עשר התחנות המקוריות, עם ההתקדמות שכבר צברתם.'}]};

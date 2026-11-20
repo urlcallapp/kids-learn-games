@@ -1,0 +1,1913 @@
+{
+  "questions": [
+    {
+      "id": "phrases-1",
+      "topic": "phrases",
+      "prompt": "מה הפירוש בעברית?",
+      "display": "What's your name?",
+      "answer": "איך קוראים לך?",
+      "hint": "חפשו את המילה השאלה: What = מה, Where = איפה, How old = בן כמה.",
+      "explanation": "What's your name? פירושו: איך קוראים לך?",
+      "choices": [
+        "קוראים לי...",
+        "איך קוראים לך?",
+        "איפה אתה גר?",
+        "אני גר ב..."
+      ],
+      "ltr": true,
+      "speak": [
+        "What's your name?"
+      ]
+    },
+    {
+      "id": "phrases-2",
+      "topic": "phrases",
+      "prompt": "מה הפירוש בעברית?",
+      "display": "My name is...",
+      "answer": "קוראים לי...",
+      "hint": "חפשו את המילה השאלה: What = מה, Where = איפה, How old = בן כמה.",
+      "explanation": "My name is... פירושו: קוראים לי...",
+      "choices": [
+        "איפה אתה גר?",
+        "אני גר ב...",
+        "קוראים לי...",
+        "בן כמה אתה?"
+      ],
+      "ltr": true,
+      "speak": [
+        "My name isblank"
+      ]
+    },
+    {
+      "id": "phrases-3",
+      "topic": "phrases",
+      "prompt": "מה הפירוש בעברית?",
+      "display": "Where do you live?",
+      "answer": "איפה אתה גר?",
+      "hint": "חפשו את המילה השאלה: What = מה, Where = איפה, How old = בן כמה.",
+      "explanation": "Where do you live? פירושו: איפה אתה גר?",
+      "choices": [
+        "אני גר ב...",
+        "בן כמה אתה?",
+        "אני בן ...",
+        "איפה אתה גר?"
+      ],
+      "ltr": true,
+      "speak": [
+        "Where do you live?"
+      ]
+    },
+    {
+      "id": "phrases-4",
+      "topic": "phrases",
+      "prompt": "מה הפירוש בעברית?",
+      "display": "I live in...",
+      "answer": "אני גר ב...",
+      "hint": "חפשו את המילה השאלה: What = מה, Where = איפה, How old = בן כמה.",
+      "explanation": "I live in... פירושו: אני גר ב...",
+      "choices": [
+        "אני גר ב...",
+        "בן כמה אתה?",
+        "אני בן ...",
+        "אני לומד בבית ספר ..."
+      ],
+      "ltr": true,
+      "speak": [
+        "I live inblank"
+      ]
+    },
+    {
+      "id": "phrases-5",
+      "topic": "phrases",
+      "prompt": "מה הפירוש בעברית?",
+      "display": "How old are you?",
+      "answer": "בן כמה אתה?",
+      "hint": "חפשו את המילה השאלה: What = מה, Where = איפה, How old = בן כמה.",
+      "explanation": "How old are you? פירושו: בן כמה אתה?",
+      "choices": [
+        "אני בן ...",
+        "בן כמה אתה?",
+        "אני לומד בבית ספר ...",
+        "איך קוראים לך?"
+      ],
+      "ltr": true,
+      "speak": [
+        "How old are you?"
+      ]
+    },
+    {
+      "id": "phrases-6",
+      "topic": "phrases",
+      "prompt": "מה הפירוש בעברית?",
+      "display": "I'm ... years old",
+      "answer": "אני בן ...",
+      "hint": "חפשו את המילה השאלה: What = מה, Where = איפה, How old = בן כמה.",
+      "explanation": "I'm ... years old פירושו: אני בן ...",
+      "choices": [
+        "אני לומד בבית ספר ...",
+        "איך קוראים לך?",
+        "אני בן ...",
+        "קוראים לי..."
+      ],
+      "ltr": true,
+      "speak": [
+        "I'm blank years old"
+      ]
+    },
+    {
+      "id": "phrases-7",
+      "topic": "phrases",
+      "prompt": "מה הפירוש בעברית?",
+      "display": "I go to ... School",
+      "answer": "אני לומד בבית ספר ...",
+      "hint": "חפשו את המילה השאלה: What = מה, Where = איפה, How old = בן כמה.",
+      "explanation": "I go to ... School פירושו: אני לומד בבית ספר ...",
+      "choices": [
+        "איך קוראים לך?",
+        "קוראים לי...",
+        "איפה אתה גר?",
+        "אני לומד בבית ספר ..."
+      ],
+      "ltr": true,
+      "speak": [
+        "I go to blank School"
+      ]
+    },
+    {
+      "id": "phrases-8",
+      "topic": "phrases",
+      "prompt": "איך אומרים באנגלית?",
+      "display": "איך קוראים לך?",
+      "answer": "What's your name?",
+      "hint": "חפשו את האנגלית שמתחילה במילה המתאימה.",
+      "explanation": "איך קוראים לך? באנגלית: What's your name?",
+      "choices": [
+        "I live in...",
+        "How old are you?",
+        "What's your name?",
+        "I'm ... years old"
+      ],
+      "textDisplay": false,
+      "speakChoices": true,
+      "speakAnswer": "What's your name?"
+    },
+    {
+      "id": "phrases-9",
+      "topic": "phrases",
+      "prompt": "איך אומרים באנגלית?",
+      "display": "קוראים לי...",
+      "answer": "My name is...",
+      "hint": "חפשו את האנגלית שמתחילה במילה המתאימה.",
+      "explanation": "קוראים לי... באנגלית: My name is...",
+      "choices": [
+        "How old are you?",
+        "I'm ... years old",
+        "I go to ... School",
+        "My name is..."
+      ],
+      "textDisplay": false,
+      "speakChoices": true,
+      "speakAnswer": "My name is..."
+    },
+    {
+      "id": "phrases-10",
+      "topic": "phrases",
+      "prompt": "איך אומרים באנגלית?",
+      "display": "איפה אתה גר?",
+      "answer": "Where do you live?",
+      "hint": "חפשו את האנגלית שמתחילה במילה המתאימה.",
+      "explanation": "איפה אתה גר? באנגלית: Where do you live?",
+      "choices": [
+        "Where do you live?",
+        "I'm ... years old",
+        "I go to ... School",
+        "What's your name?"
+      ],
+      "textDisplay": false,
+      "speakChoices": true,
+      "speakAnswer": "Where do you live?"
+    },
+    {
+      "id": "phrases-11",
+      "topic": "phrases",
+      "prompt": "איך אומרים באנגלית?",
+      "display": "אני גר ב...",
+      "answer": "I live in...",
+      "hint": "חפשו את האנגלית שמתחילה במילה המתאימה.",
+      "explanation": "אני גר ב... באנגלית: I live in...",
+      "choices": [
+        "I go to ... School",
+        "I live in...",
+        "What's your name?",
+        "My name is..."
+      ],
+      "textDisplay": false,
+      "speakChoices": true,
+      "speakAnswer": "I live in..."
+    },
+    {
+      "id": "phrases-12",
+      "topic": "phrases",
+      "prompt": "איך אומרים באנגלית?",
+      "display": "בן כמה אתה?",
+      "answer": "How old are you?",
+      "hint": "חפשו את האנגלית שמתחילה במילה המתאימה.",
+      "explanation": "בן כמה אתה? באנגלית: How old are you?",
+      "choices": [
+        "What's your name?",
+        "My name is...",
+        "How old are you?",
+        "Where do you live?"
+      ],
+      "textDisplay": false,
+      "speakChoices": true,
+      "speakAnswer": "How old are you?"
+    },
+    {
+      "id": "phrases-13",
+      "topic": "phrases",
+      "prompt": "איך אומרים באנגלית?",
+      "display": "אני בן ...",
+      "answer": "I'm ... years old",
+      "hint": "חפשו את האנגלית שמתחילה במילה המתאימה.",
+      "explanation": "אני בן ... באנגלית: I'm ... years old",
+      "choices": [
+        "My name is...",
+        "Where do you live?",
+        "I live in...",
+        "I'm ... years old"
+      ],
+      "textDisplay": false,
+      "speakChoices": true,
+      "speakAnswer": "I'm ... years old"
+    },
+    {
+      "id": "words-a-1",
+      "topic": "words-a",
+      "prompt": "מה פירוש המילה?",
+      "display": "friend",
+      "answer": "חבר",
+      "hint": "נסו לחשוב על משפט שבו המילה מופיעה.",
+      "explanation": "friend פירושו חבר.",
+      "choices": [
+        "חבר",
+        "כיתה",
+        "בית",
+        "חדש"
+      ],
+      "speak": [
+        "friend"
+      ]
+    },
+    {
+      "id": "words-a-2",
+      "topic": "words-a",
+      "prompt": "מה פירוש המילה?",
+      "display": "grade",
+      "answer": "כיתה",
+      "hint": "נסו לחשוב על משפט שבו המילה מופיעה.",
+      "explanation": "grade פירושו כיתה.",
+      "choices": [
+        "בית",
+        "כיתה",
+        "חדש",
+        "בית ספר"
+      ],
+      "speak": [
+        "grade"
+      ]
+    },
+    {
+      "id": "words-a-3",
+      "topic": "words-a",
+      "prompt": "מה פירוש המילה?",
+      "display": "house",
+      "answer": "בית",
+      "hint": "נסו לחשוב על משפט שבו המילה מופיעה.",
+      "explanation": "house פירושו בית.",
+      "choices": [
+        "חדש",
+        "בית ספר",
+        "בית",
+        "מורה"
+      ],
+      "speak": [
+        "house"
+      ]
+    },
+    {
+      "id": "words-a-4",
+      "topic": "words-a",
+      "prompt": "מה פירוש המילה?",
+      "display": "new",
+      "answer": "חדש",
+      "hint": "נסו לחשוב על משפט שבו המילה מופיעה.",
+      "explanation": "new פירושו חדש.",
+      "choices": [
+        "בית ספר",
+        "מורה",
+        "עיירה",
+        "חדש"
+      ],
+      "speak": [
+        "new"
+      ]
+    },
+    {
+      "id": "words-a-5",
+      "topic": "words-a",
+      "prompt": "מה פירוש המילה?",
+      "display": "school",
+      "answer": "בית ספר",
+      "hint": "נסו לחשוב על משפט שבו המילה מופיעה.",
+      "explanation": "school פירושו בית ספר.",
+      "choices": [
+        "בית ספר",
+        "מורה",
+        "עיירה",
+        "חבר"
+      ],
+      "speak": [
+        "school"
+      ]
+    },
+    {
+      "id": "words-a-6",
+      "topic": "words-a",
+      "prompt": "מה פירוש המילה?",
+      "display": "teacher",
+      "answer": "מורה",
+      "hint": "נסו לחשוב על משפט שבו המילה מופיעה.",
+      "explanation": "teacher פירושו מורה.",
+      "choices": [
+        "עיירה",
+        "מורה",
+        "חבר",
+        "כיתה"
+      ],
+      "speak": [
+        "teacher"
+      ]
+    },
+    {
+      "id": "words-a-7",
+      "topic": "words-a",
+      "prompt": "מה פירוש המילה?",
+      "display": "town",
+      "answer": "עיירה",
+      "hint": "נסו לחשוב על משפט שבו המילה מופיעה.",
+      "explanation": "town פירושו עיירה.",
+      "choices": [
+        "חבר",
+        "כיתה",
+        "עיירה",
+        "בית"
+      ],
+      "speak": [
+        "town"
+      ]
+    },
+    {
+      "id": "words-a-8",
+      "topic": "words-a",
+      "prompt": "איך אומרים באנגלית?",
+      "display": "חבר",
+      "answer": "friend",
+      "hint": "חפשו את המילה שזכרתם מהרשימה.",
+      "explanation": "חבר באנגלית: friend.",
+      "choices": [
+        "house",
+        "friend",
+        "new",
+        "school"
+      ],
+      "ltr": false,
+      "speakChoices": true,
+      "speakAnswer": "friend"
+    },
+    {
+      "id": "words-a-9",
+      "topic": "words-a",
+      "prompt": "איך אומרים באנגלית?",
+      "display": "בית",
+      "answer": "house",
+      "hint": "חפשו את המילה שזכרתם מהרשימה.",
+      "explanation": "בית באנגלית: house.",
+      "choices": [
+        "school",
+        "teacher",
+        "town",
+        "house"
+      ],
+      "ltr": false,
+      "speakChoices": true,
+      "speakAnswer": "house"
+    },
+    {
+      "id": "words-a-10",
+      "topic": "words-a",
+      "prompt": "איך אומרים באנגלית?",
+      "display": "בית ספר",
+      "answer": "school",
+      "hint": "חפשו את המילה שזכרתם מהרשימה.",
+      "explanation": "בית ספר באנגלית: school.",
+      "choices": [
+        "town",
+        "school",
+        "friend",
+        "grade"
+      ],
+      "ltr": false,
+      "speakChoices": true,
+      "speakAnswer": "school"
+    },
+    {
+      "id": "words-a-11",
+      "topic": "words-a",
+      "prompt": "איך אומרים באנגלית?",
+      "display": "עיירה",
+      "answer": "town",
+      "hint": "חפשו את המילה שזכרתם מהרשימה.",
+      "explanation": "עיירה באנגלית: town.",
+      "choices": [
+        "grade",
+        "house",
+        "new",
+        "town"
+      ],
+      "ltr": false,
+      "speakChoices": true,
+      "speakAnswer": "town"
+    },
+    {
+      "id": "words-b-1",
+      "topic": "words-b",
+      "prompt": "מה פירוש המילה?",
+      "display": "brother",
+      "answer": "אח",
+      "hint": "נסו לחשוב על משפט שבו המילה מופיעה.",
+      "explanation": "brother פירושו אח.",
+      "choices": [
+        "אח",
+        "אחות",
+        "ציפור",
+        "אנגלית"
+      ],
+      "speak": [
+        "brother"
+      ]
+    },
+    {
+      "id": "words-b-2",
+      "topic": "words-b",
+      "prompt": "מה פירוש המילה?",
+      "display": "sister",
+      "answer": "אחות",
+      "hint": "נסו לחשוב על משפט שבו המילה מופיעה.",
+      "explanation": "sister פירושו אחות.",
+      "choices": [
+        "ציפור",
+        "אחות",
+        "אנגלית",
+        "משפחה"
+      ],
+      "speak": [
+        "sister"
+      ]
+    },
+    {
+      "id": "words-b-3",
+      "topic": "words-b",
+      "prompt": "מה פירוש המילה?",
+      "display": "bird",
+      "answer": "ציפור",
+      "hint": "נסו לחשוב על משפט שבו המילה מופיעה.",
+      "explanation": "bird פירושו ציפור.",
+      "choices": [
+        "אנגלית",
+        "משפחה",
+        "ציפור",
+        "לעוף"
+      ],
+      "speak": [
+        "bird"
+      ]
+    },
+    {
+      "id": "words-b-4",
+      "topic": "words-b",
+      "prompt": "מה פירוש המילה?",
+      "display": "English",
+      "answer": "אנגלית",
+      "hint": "נסו לחשוב על משפט שבו המילה מופיעה.",
+      "explanation": "English פירושו אנגלית.",
+      "choices": [
+        "משפחה",
+        "לעוף",
+        "שיעור",
+        "אנגלית"
+      ],
+      "speak": [
+        "English"
+      ]
+    },
+    {
+      "id": "words-b-5",
+      "topic": "words-b",
+      "prompt": "מה פירוש המילה?",
+      "display": "family",
+      "answer": "משפחה",
+      "hint": "נסו לחשוב על משפט שבו המילה מופיעה.",
+      "explanation": "family פירושו משפחה.",
+      "choices": [
+        "משפחה",
+        "לעוף",
+        "שיעור",
+        "נחמד"
+      ],
+      "speak": [
+        "family"
+      ]
+    },
+    {
+      "id": "words-b-6",
+      "topic": "words-b",
+      "prompt": "מה פירוש המילה?",
+      "display": "fly",
+      "answer": "לעוף",
+      "hint": "נסו לחשוב על משפט שבו המילה מופיעה.",
+      "explanation": "fly פירושו לעוף.",
+      "choices": [
+        "שיעור",
+        "לעוף",
+        "נחמד",
+        "לדבר"
+      ],
+      "speak": [
+        "fly"
+      ]
+    },
+    {
+      "id": "words-b-7",
+      "topic": "words-b",
+      "prompt": "מה פירוש המילה?",
+      "display": "lesson",
+      "answer": "שיעור",
+      "hint": "נסו לחשוב על משפט שבו המילה מופיעה.",
+      "explanation": "lesson פירושו שיעור.",
+      "choices": [
+        "נחמד",
+        "לדבר",
+        "שיעור",
+        "רוצה"
+      ],
+      "speak": [
+        "lesson"
+      ]
+    },
+    {
+      "id": "words-b-8",
+      "topic": "words-b",
+      "prompt": "מה פירוש המילה?",
+      "display": "nice",
+      "answer": "נחמד",
+      "hint": "נסו לחשוב על משפט שבו המילה מופיעה.",
+      "explanation": "nice פירושו נחמד.",
+      "choices": [
+        "לדבר",
+        "רוצה",
+        "אח",
+        "נחמד"
+      ],
+      "speak": [
+        "nice"
+      ]
+    },
+    {
+      "id": "words-b-9",
+      "topic": "words-b",
+      "prompt": "מה פירוש המילה?",
+      "display": "talk",
+      "answer": "לדבר",
+      "hint": "נסו לחשוב על משפט שבו המילה מופיעה.",
+      "explanation": "talk פירושו לדבר.",
+      "choices": [
+        "לדבר",
+        "רוצה",
+        "אח",
+        "אחות"
+      ],
+      "speak": [
+        "talk"
+      ]
+    },
+    {
+      "id": "words-b-10",
+      "topic": "words-b",
+      "prompt": "מה פירוש המילה?",
+      "display": "want",
+      "answer": "רוצה",
+      "hint": "נסו לחשוב על משפט שבו המילה מופיעה.",
+      "explanation": "want פירושו רוצה.",
+      "choices": [
+        "אח",
+        "רוצה",
+        "אחות",
+        "ציפור"
+      ],
+      "speak": [
+        "want"
+      ]
+    },
+    {
+      "id": "words-b-11",
+      "topic": "words-b",
+      "prompt": "איך אומרים באנגלית?",
+      "display": "אחות",
+      "answer": "sister",
+      "hint": "חפשו את המילה שזכרתם מהרשימה.",
+      "explanation": "אחות באנגלית: sister.",
+      "choices": [
+        "sister",
+        "English",
+        "family",
+        "fly"
+      ],
+      "speakChoices": true,
+      "speakAnswer": "sister"
+    },
+    {
+      "id": "words-b-12",
+      "topic": "words-b",
+      "prompt": "איך אומרים באנגלית?",
+      "display": "אנגלית",
+      "answer": "English",
+      "hint": "חפשו את המילה שזכרתם מהרשימה.",
+      "explanation": "אנגלית באנגלית: English.",
+      "choices": [
+        "fly",
+        "lesson",
+        "English",
+        "nice"
+      ],
+      "speakChoices": true,
+      "speakAnswer": "English"
+    },
+    {
+      "id": "words-b-13",
+      "topic": "words-b",
+      "prompt": "איך אומרים באנגלית?",
+      "display": "לעוף",
+      "answer": "fly",
+      "hint": "חפשו את המילה שזכרתם מהרשימה.",
+      "explanation": "לעוף באנגלית: fly.",
+      "choices": [
+        "fly",
+        "nice",
+        "talk",
+        "want"
+      ],
+      "speakChoices": true,
+      "speakAnswer": "fly"
+    },
+    {
+      "id": "words-b-14",
+      "topic": "words-b",
+      "prompt": "איך אומרים באנגלית?",
+      "display": "נחמד",
+      "answer": "nice",
+      "hint": "חפשו את המילה שזכרתם מהרשימה.",
+      "explanation": "נחמד באנגלית: nice.",
+      "choices": [
+        "want",
+        "brother",
+        "nice",
+        "sister"
+      ],
+      "speakChoices": true,
+      "speakAnswer": "nice"
+    },
+    {
+      "id": "words-b-15",
+      "topic": "words-b",
+      "prompt": "איך אומרים באנגלית?",
+      "display": "רוצה",
+      "answer": "want",
+      "hint": "חפשו את המילה שזכרתם מהרשימה.",
+      "explanation": "רוצה באנגלית: want.",
+      "choices": [
+        "want",
+        "sister",
+        "bird",
+        "English"
+      ],
+      "speakChoices": true,
+      "speakAnswer": "want"
+    },
+    {
+      "id": "spell-1",
+      "topic": "spell",
+      "prompt": "איך כותבים באנגלית?",
+      "display": "מורה",
+      "answer": "teacher",
+      "hint": "המילה מתחילה באות t ויש בה 7 אותיות.",
+      "explanation": "מורה באנגלית: teacher.",
+      "input": "text",
+      "textDisplay": false,
+      "speakAnswer": "teacher"
+    },
+    {
+      "id": "spell-2",
+      "topic": "spell",
+      "prompt": "איך כותבים באנגלית?",
+      "display": "חבר",
+      "answer": "friend",
+      "hint": "המילה מתחילה באות f ויש בה 6 אותיות.",
+      "explanation": "חבר באנגלית: friend.",
+      "input": "text",
+      "textDisplay": false,
+      "speakAnswer": "friend"
+    },
+    {
+      "id": "spell-3",
+      "topic": "spell",
+      "prompt": "איך כותבים באנגלית?",
+      "display": "בית ספר",
+      "answer": "school",
+      "hint": "המילה מתחילה באות s ויש בה 6 אותיות.",
+      "explanation": "בית ספר באנגלית: school.",
+      "input": "text",
+      "textDisplay": false,
+      "speakAnswer": "school"
+    },
+    {
+      "id": "spell-4",
+      "topic": "spell",
+      "prompt": "איך כותבים באנגלית?",
+      "display": "בית",
+      "answer": "house",
+      "hint": "המילה מתחילה באות h ויש בה 5 אותיות.",
+      "explanation": "בית באנגלית: house.",
+      "input": "text",
+      "textDisplay": false,
+      "speakAnswer": "house"
+    },
+    {
+      "id": "spell-5",
+      "topic": "spell",
+      "prompt": "איך כותבים באנגלית?",
+      "display": "אח",
+      "answer": "brother",
+      "hint": "המילה מתחילה באות b ויש בה 7 אותיות.",
+      "explanation": "אח באנגלית: brother.",
+      "input": "text",
+      "textDisplay": false,
+      "speakAnswer": "brother"
+    },
+    {
+      "id": "spell-6",
+      "topic": "spell",
+      "prompt": "איך כותבים באנגלית?",
+      "display": "אחות",
+      "answer": "sister",
+      "hint": "המילה מתחילה באות s ויש בה 6 אותיות.",
+      "explanation": "אחות באנגלית: sister.",
+      "input": "text",
+      "textDisplay": false,
+      "speakAnswer": "sister"
+    },
+    {
+      "id": "spell-7",
+      "topic": "spell",
+      "prompt": "איך כותבים באנגלית?",
+      "display": "משפחה",
+      "answer": "family",
+      "hint": "המילה מתחילה באות f ויש בה 6 אותיות.",
+      "explanation": "משפחה באנגלית: family.",
+      "input": "text",
+      "textDisplay": false,
+      "speakAnswer": "family"
+    },
+    {
+      "id": "spell-8",
+      "topic": "spell",
+      "prompt": "איך כותבים באנגלית?",
+      "display": "ציפור",
+      "answer": "bird",
+      "hint": "המילה מתחילה באות b ויש בה 4 אותיות.",
+      "explanation": "ציפור באנגלית: bird.",
+      "input": "text",
+      "textDisplay": false,
+      "speakAnswer": "bird"
+    },
+    {
+      "id": "spell-9",
+      "topic": "spell",
+      "prompt": "איך כותבים באנגלית?",
+      "display": "שיעור",
+      "answer": "lesson",
+      "hint": "המילה מתחילה באות l ויש בה 6 אותיות.",
+      "explanation": "שיעור באנגלית: lesson.",
+      "input": "text",
+      "textDisplay": false,
+      "speakAnswer": "lesson"
+    },
+    {
+      "id": "spell-10",
+      "topic": "spell",
+      "prompt": "איך כותבים באנגלית?",
+      "display": "אנגלית",
+      "answer": "English",
+      "hint": "המילה מתחילה באות E ויש בה 7 אותיות.",
+      "explanation": "אנגלית באנגלית: English.",
+      "input": "text",
+      "textDisplay": false,
+      "speakAnswer": "English"
+    },
+    {
+      "id": "spell-11",
+      "topic": "spell",
+      "prompt": "איך כותבים באנגלית?",
+      "display": "עיירה",
+      "answer": "town",
+      "hint": "המילה מתחילה באות t ויש בה 4 אותיות.",
+      "explanation": "עיירה באנגלית: town.",
+      "input": "text",
+      "textDisplay": false,
+      "speakAnswer": "town"
+    },
+    {
+      "id": "spell-12",
+      "topic": "spell",
+      "prompt": "איך כותבים באנגלית?",
+      "display": "כיתה",
+      "answer": "grade",
+      "hint": "המילה מתחילה באות g ויש בה 5 אותיות.",
+      "explanation": "כיתה באנגלית: grade.",
+      "input": "text",
+      "textDisplay": false,
+      "speakAnswer": "grade"
+    },
+    {
+      "id": "fill-1",
+      "topic": "fill",
+      "prompt": "איזו מילה חסרה?",
+      "display": "My ____ is big and has a red door.",
+      "answer": "house",
+      "hint": "מדובר במקום שגרים בו.",
+      "explanation": "My house is big and has a red door. (המשפט: הבית שלי גדול ויש לו דלת אדומה.)",
+      "choices": [
+        "house",
+        "bird",
+        "talk",
+        "grade"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "My blank is big and has a red door."
+      ],
+      "speakChoices": true,
+      "speakAnswer": "My house is big and has a red door."
+    },
+    {
+      "id": "fill-2",
+      "topic": "fill",
+      "prompt": "איזו מילה חסרה?",
+      "display": "I am in ____ four.",
+      "answer": "grade",
+      "hint": "באיזו כיתה אני? כיתה ד׳ היא four.",
+      "explanation": "I am in grade four. (אני בכיתה ד׳.)",
+      "choices": [
+        "house",
+        "grade",
+        "fly",
+        "town"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "I am in blank four."
+      ],
+      "speakChoices": true,
+      "speakAnswer": "I am in grade four."
+    },
+    {
+      "id": "fill-3",
+      "topic": "fill",
+      "prompt": "איזו מילה חסרה?",
+      "display": "A ____ can fly in the sky.",
+      "answer": "bird",
+      "hint": "מי עף בשמיים?",
+      "explanation": "A bird can fly in the sky. (ציפור יכולה לעוף בשמיים.)",
+      "choices": [
+        "talk",
+        "town",
+        "bird",
+        "grade"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "A blank can fly in the sky."
+      ],
+      "speakChoices": true,
+      "speakAnswer": "A bird can fly in the sky."
+    },
+    {
+      "id": "fill-4",
+      "topic": "fill",
+      "prompt": "איזו מילה חסרה?",
+      "display": "A bird can ____.",
+      "answer": "fly",
+      "hint": "מה ציפור עושה באוויר?",
+      "explanation": "A bird can fly. (ציפור יכולה לעוף.)",
+      "choices": [
+        "grade",
+        "fly",
+        "house",
+        "town"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "A bird can blank."
+      ],
+      "speakChoices": true,
+      "speakAnswer": "A bird can fly."
+    },
+    {
+      "id": "fill-5",
+      "topic": "fill",
+      "prompt": "איזו מילה חסרה?",
+      "display": "I like to ____ with my friends.",
+      "answer": "talk",
+      "hint": "מה עושים עם חברים בעזרת מילים?",
+      "explanation": "I like to talk with my friends. (אני אוהב לדבר עם החברים שלי.)",
+      "choices": [
+        "house",
+        "bird",
+        "talk",
+        "grade"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "I like to blank with my friends."
+      ],
+      "speakChoices": true,
+      "speakAnswer": "I like to talk with my friends."
+    },
+    {
+      "id": "fill-6",
+      "topic": "fill",
+      "prompt": "איזו מילה חסרה?",
+      "display": "I live in a small ____. Everyone knows everyone.",
+      "answer": "town",
+      "hint": "מקום קטן שבו כולם מכירים.",
+      "explanation": "I live in a small town. Everyone knows everyone. (אני גר בעיירה קטנה. כולם מכירים את כולם.)",
+      "choices": [
+        "town",
+        "bird",
+        "fly",
+        "grade"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "I live in a small blank. Everyone knows everyone."
+      ],
+      "speakChoices": true,
+      "speakAnswer": "I live in a small town. Everyone knows everyone."
+    },
+    {
+      "id": "fill-7",
+      "topic": "fill",
+      "prompt": "איזו מילה חסרה?",
+      "display": "My English ____ is nice.",
+      "answer": "teacher",
+      "hint": "מי מלמד אותנו בבית הספר?",
+      "explanation": "My English teacher is nice. (המורה שלי לאנגלית נחמדה.)",
+      "choices": [
+        "teacher",
+        "brother",
+        "lesson",
+        "family"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "My English blank is nice."
+      ],
+      "speakChoices": true,
+      "speakAnswer": "My English teacher is nice."
+    },
+    {
+      "id": "fill-8",
+      "topic": "fill",
+      "prompt": "איזו מילה חסרה?",
+      "display": "I have two sisters and one ____.",
+      "answer": "brother",
+      "hint": "אחות היא sister. מה זה אח?",
+      "explanation": "I have two sisters and one brother. (יש לי שתי אחיות ואח אחד.)",
+      "choices": [
+        "friend",
+        "brother",
+        "teacher",
+        "school"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "I have two sisters and one blank."
+      ],
+      "speakChoices": true,
+      "speakAnswer": "I have two sisters and one brother."
+    },
+    {
+      "id": "fill-9",
+      "topic": "fill",
+      "prompt": "איזו מילה חסרה?",
+      "display": "We have an English ____ today.",
+      "answer": "lesson",
+      "hint": "מה יש בבית הספר לפי מערכת השעות?",
+      "explanation": "We have an English lesson today. (יש לנו היום שיעור אנגלית.)",
+      "choices": [
+        "bird",
+        "lesson",
+        "house",
+        "sister"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "We have an English blank today."
+      ],
+      "speakChoices": true,
+      "speakAnswer": "We have an English lesson today."
+    },
+    {
+      "id": "fill-10",
+      "topic": "fill",
+      "prompt": "איזו מילה חסרה?",
+      "display": "I go to a new ____. It is big.",
+      "answer": "school",
+      "hint": "לאן הולכים כל בוקר ללמוד?",
+      "explanation": "I go to a new school. It is big. (אני הולך לבית ספר חדש. הוא גדול.)",
+      "choices": [
+        "school",
+        "sister",
+        "bird",
+        "fly"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "I go to a new blank. It is big."
+      ],
+      "speakChoices": true,
+      "speakAnswer": "I go to a new school. It is big."
+    },
+    {
+      "id": "fill-11",
+      "topic": "fill",
+      "prompt": "איזו מילה חסרה?",
+      "display": "My friend is ____. He helps me.",
+      "answer": "nice",
+      "hint": "איך קוראים לאדם טוב שעוזר? ",
+      "explanation": "My friend is nice. He helps me. undefined",
+      "choices": [
+        "new",
+        "nice",
+        "town",
+        "want"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "My friend is blank. He helps me."
+      ],
+      "speakChoices": true,
+      "speakAnswer": "My friend is nice. He helps me."
+    },
+    {
+      "id": "dialogue-1",
+      "topic": "dialogue",
+      "prompt": "מה עונים?",
+      "display": "— What's your name?",
+      "answer": "My name is Dan.",
+      "hint": "השאלה היא על שם.",
+      "explanation": "What's your name? = איך קוראים לך? עונים: My name is...",
+      "choices": [
+        "I live in Green Town.",
+        "I'm ten years old.",
+        "My name is Dan.",
+        "I go to Sunrise School."
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "What's your name?"
+      ],
+      "speakChoices": true,
+      "speakAnswer": "My name is Dan."
+    },
+    {
+      "id": "dialogue-2",
+      "topic": "dialogue",
+      "prompt": "מה עונים?",
+      "display": "— Where do you live?",
+      "answer": "I live in Green Town.",
+      "hint": "השאלה היא על מקום מגורים.",
+      "explanation": "Where do you live? = איפה אתה גר? עונים: I live in...",
+      "choices": [
+        "I live in Green Town.",
+        "My name is Dan.",
+        "I'm ten years old.",
+        "I have one brother."
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "Where do you live?"
+      ],
+      "speakChoices": true,
+      "speakAnswer": "I live in Green Town."
+    },
+    {
+      "id": "dialogue-3",
+      "topic": "dialogue",
+      "prompt": "מה עונים?",
+      "display": "— How old are you?",
+      "answer": "I'm ten years old.",
+      "hint": "השאלה היא על גיל.",
+      "explanation": "How old are you? = בן כמה אתה? עונים: I'm ... years old.",
+      "choices": [
+        "I'm ten years old.",
+        "I live in Green Town.",
+        "My name is Dan.",
+        "I want a bike."
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "How old are you?"
+      ],
+      "speakChoices": true,
+      "speakAnswer": "I'm ten years old."
+    },
+    {
+      "id": "dialogue-4",
+      "topic": "dialogue",
+      "prompt": "איזו שאלה חסרה?",
+      "display": "— ____   — I live in Blue Town.",
+      "answer": "Where do you live?",
+      "hint": "התשובה אומרת איפה גרים.",
+      "explanation": "התשובה I live in... מתאימה לשאלה Where do you live?",
+      "choices": [
+        "What's your name?",
+        "Where do you live?",
+        "How old are you?",
+        "Do you want a bike?"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "blank I live in Blue Town."
+      ],
+      "speakChoices": true,
+      "speakAnswer": "Where do you live?"
+    },
+    {
+      "id": "dialogue-5",
+      "topic": "dialogue",
+      "prompt": "איזו שאלה חסרה?",
+      "display": "— ____   — My name is Maya.",
+      "answer": "What's your name?",
+      "hint": "התשובה אומרת איך קוראים לי.",
+      "explanation": "התשובה My name is... מתאימה לשאלה What's your name?",
+      "choices": [
+        "How old are you?",
+        "What's your name?",
+        "Where do you live?",
+        "Is she nice?"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "blank My name is Maya."
+      ],
+      "speakChoices": true,
+      "speakAnswer": "What's your name?"
+    },
+    {
+      "id": "dialogue-6",
+      "topic": "dialogue",
+      "prompt": "איזו שאלה חסרה?",
+      "display": "— ____   — I'm ten years old.",
+      "answer": "How old are you?",
+      "hint": "התשובה מזכירה גיל.",
+      "explanation": "התשובה I'm ... years old מתאימה לשאלה How old are you?",
+      "choices": [
+        "Where do you live?",
+        "What's your name?",
+        "How old are you?",
+        "Do you have a dog?"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "blank I'm ten years old."
+      ],
+      "speakChoices": true,
+      "speakAnswer": "How old are you?"
+    },
+    {
+      "id": "dialogue-7",
+      "topic": "dialogue",
+      "prompt": "איזו תשובה מתאימה?",
+      "display": "— Where do you live?",
+      "answer": "I live in a small town.",
+      "hint": "חפשו את המשפט שמתחיל ב־I live.",
+      "explanation": "I live in... עונה על Where do you live?",
+      "choices": [
+        "My name is Omer.",
+        "I live in a small town.",
+        "I am ten years old.",
+        "I have two brothers."
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "Where do you live?"
+      ],
+      "speakChoices": true,
+      "speakAnswer": "I live in a small town."
+    },
+    {
+      "id": "dialogue-8",
+      "topic": "dialogue",
+      "prompt": "איזו תשובה מתאימה?",
+      "display": "— How old are you?",
+      "answer": "I am ten years old.",
+      "hint": "חפשו את המשפט עם years old.",
+      "explanation": "I am ... years old עונה על How old are you?",
+      "choices": [
+        "I am ten years old.",
+        "I live in a house.",
+        "My teacher is nice.",
+        "I go to school."
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "How old are you?"
+      ],
+      "speakChoices": true,
+      "speakAnswer": "I am ten years old."
+    },
+    {
+      "id": "card-1",
+      "topic": "card",
+      "prompt": "בנק מילים: house, grade, bird, talk, fly, town",
+      "display": "My name is Dan. I am ten years old and I am in ____ four. I go to \"Sunrise\" School. I live in a town near the sea. My house is white. I have two sisters. My teacher is nice.",
+      "answer": "grade",
+      "hint": "בכיתה ד׳ אומרים: ... four.",
+      "explanation": "I am in grade four = אני בכיתה ד׳.",
+      "choices": [
+        "house",
+        "grade",
+        "bird",
+        "talk",
+        "fly",
+        "town"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "My name is Dan. I am ten years old and I am in blank four. I go to \"Sunrise\" School. I live in a town near the sea. My house is white. I have two sisters. My teacher is nice."
+      ],
+      "speakChoices": true,
+      "speakAnswer": "My name is Dan. I am ten years old and I am in grade four. I go to \"Sunrise\" School. I live in a town near the sea. My house is white. I have two sisters. My teacher is nice."
+    },
+    {
+      "id": "card-2",
+      "topic": "card",
+      "prompt": "בנק מילים: house, grade, bird, talk, fly, town",
+      "display": "My name is Dan. I am ten years old and I am in grade four. I go to \"Sunrise\" School. I live in a ____ near the sea. My house is white. I have two sisters. My teacher is nice.",
+      "answer": "town",
+      "hint": "איפה גרים? מקום קטן ליד הים.",
+      "explanation": "I live in a town near the sea = אני גר בעיירה ליד הים.",
+      "choices": [
+        "house",
+        "grade",
+        "bird",
+        "talk",
+        "fly",
+        "town"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "My name is Dan. I am ten years old and I am in grade four. I go to \"Sunrise\" School. I live in a blank near the sea. My house is white. I have two sisters. My teacher is nice."
+      ],
+      "speakChoices": true,
+      "speakAnswer": "My name is Dan. I am ten years old and I am in grade four. I go to \"Sunrise\" School. I live in a town near the sea. My house is white. I have two sisters. My teacher is nice."
+    },
+    {
+      "id": "card-3",
+      "topic": "card",
+      "prompt": "בנק מילים: house, grade, bird, talk, fly, town",
+      "display": "My name is Dan. I am ten years old and I am in grade four. I go to \"Sunrise\" School. I live in a town near the sea. My ____ is white. I have two sisters. My teacher is nice.",
+      "answer": "house",
+      "hint": "מה שלי לבן? מקום שגרים בו.",
+      "explanation": "My house is white = הבית שלי לבן.",
+      "choices": [
+        "house",
+        "grade",
+        "bird",
+        "talk",
+        "fly",
+        "town"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "My name is Dan. I am ten years old and I am in grade four. I go to \"Sunrise\" School. I live in a town near the sea. My blank is white. I have two sisters. My teacher is nice."
+      ],
+      "speakChoices": true,
+      "speakAnswer": "My name is Dan. I am ten years old and I am in grade four. I go to \"Sunrise\" School. I live in a town near the sea. My house is white. I have two sisters. My teacher is nice."
+    },
+    {
+      "id": "card-4",
+      "topic": "card",
+      "prompt": "בנק מילים: house, grade, bird, talk, fly, town",
+      "display": "Birds can ____ in the sky. Dan likes to watch them.",
+      "answer": "fly",
+      "hint": "מה ציפורים עושות בשמיים?",
+      "explanation": "Birds can fly = ציפורים יכולות לעוף.",
+      "choices": [
+        "house",
+        "grade",
+        "talk",
+        "fly",
+        "town"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "Birds can blank in the sky. Dan likes to watch them."
+      ],
+      "speakChoices": true,
+      "speakAnswer": "Birds can fly in the sky. Dan likes to watch them."
+    },
+    {
+      "id": "card-5",
+      "topic": "card",
+      "prompt": "בנק מילים: house, grade, bird, talk, fly, town",
+      "display": "Look! A ____ is in the tree.",
+      "answer": "bird",
+      "hint": "בעל חיים עם כנפיים שיכול לדבר.",
+      "explanation": "A bird is in the tree = ציפור על העץ.",
+      "choices": [
+        "house",
+        "bird",
+        "fly",
+        "grade",
+        "town"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "Look! A blank is in the tree."
+      ],
+      "speakChoices": true,
+      "speakAnswer": "Look! A bird is in the tree."
+    },
+    {
+      "id": "card-6",
+      "topic": "card",
+      "prompt": "בנק מילים: house, grade, bird, talk, fly, town",
+      "display": "Dan and his friends like to ____ after school.",
+      "answer": "talk",
+      "hint": "מה עושים עם חברים בעזרת מילים?",
+      "explanation": "like to talk = אוהבים לדבר.",
+      "choices": [
+        "house",
+        "grade",
+        "bird",
+        "talk",
+        "town"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "Dan and his friends like to blank after school."
+      ],
+      "speakChoices": true,
+      "speakAnswer": "Dan and his friends like to talk after school."
+    },
+    {
+      "id": "yesno-1",
+      "topic": "yesno",
+      "prompt": "קראו את הטקסט והחליטו: Yes או No?",
+      "display": "Maya is nine years old.",
+      "answer": "Yes",
+      "hint": "חזרו לטקסט ובדקו את המשפט מילה במילה.",
+      "explanation": "כתוב I am nine years old, לכן Yes.",
+      "choices": [
+        "Yes",
+        "No"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "passage": "Hello, my name is Maya. I am nine years old and I am in grade four. I go to \"Moon\" School. I live in Blue Town. I have 2 brothers. I have a rabbit and I want a parrot. My English teacher is nice. I have a test on Sunday.",
+      "speak": [
+        "Hello, my name is Maya. I am nine years old and I am in grade four. I go to \"Moon\" School. I live in Blue Town. I have 2 brothers. I have a rabbit and I want a parrot. My English teacher is nice. I have a test on Sunday.",
+        "Maya is nine years old."
+      ]
+    },
+    {
+      "id": "yesno-2",
+      "topic": "yesno",
+      "prompt": "קראו את הטקסט והחליטו: Yes או No?",
+      "display": "Maya has a rabbit.",
+      "answer": "Yes",
+      "hint": "חזרו לטקסט ובדקו את המשפט מילה במילה.",
+      "explanation": "כתוב I have a rabbit, לכן Yes.",
+      "choices": [
+        "Yes",
+        "No"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "passage": "Hello, my name is Maya. I am nine years old and I am in grade four. I go to \"Moon\" School. I live in Blue Town. I have 2 brothers. I have a rabbit and I want a parrot. My English teacher is nice. I have a test on Sunday.",
+      "speak": [
+        "Hello, my name is Maya. I am nine years old and I am in grade four. I go to \"Moon\" School. I live in Blue Town. I have 2 brothers. I have a rabbit and I want a parrot. My English teacher is nice. I have a test on Sunday.",
+        "Maya has a rabbit."
+      ]
+    },
+    {
+      "id": "yesno-3",
+      "topic": "yesno",
+      "prompt": "קראו את הטקסט והחליטו: Yes או No?",
+      "display": "Maya wants a rabbit.",
+      "answer": "No",
+      "hint": "חזרו לטקסט ובדקו את המשפט מילה במילה.",
+      "explanation": "יש לה ארנב אבל היא רוצה תוכי (I want a parrot), לכן No.",
+      "choices": [
+        "Yes",
+        "No"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "passage": "Hello, my name is Maya. I am nine years old and I am in grade four. I go to \"Moon\" School. I live in Blue Town. I have 2 brothers. I have a rabbit and I want a parrot. My English teacher is nice. I have a test on Sunday.",
+      "speak": [
+        "Hello, my name is Maya. I am nine years old and I am in grade four. I go to \"Moon\" School. I live in Blue Town. I have 2 brothers. I have a rabbit and I want a parrot. My English teacher is nice. I have a test on Sunday.",
+        "Maya wants a rabbit."
+      ]
+    },
+    {
+      "id": "yesno-4",
+      "topic": "yesno",
+      "prompt": "קראו את הטקסט והחליטו: Yes או No?",
+      "display": "Maya lives in Blue Town.",
+      "answer": "Yes",
+      "hint": "חזרו לטקסט ובדקו את המשפט מילה במילה.",
+      "explanation": "כתוב I live in Blue Town, לכן Yes.",
+      "choices": [
+        "Yes",
+        "No"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "passage": "Hello, my name is Maya. I am nine years old and I am in grade four. I go to \"Moon\" School. I live in Blue Town. I have 2 brothers. I have a rabbit and I want a parrot. My English teacher is nice. I have a test on Sunday.",
+      "speak": [
+        "Hello, my name is Maya. I am nine years old and I am in grade four. I go to \"Moon\" School. I live in Blue Town. I have 2 brothers. I have a rabbit and I want a parrot. My English teacher is nice. I have a test on Sunday.",
+        "Maya lives in Blue Town."
+      ]
+    },
+    {
+      "id": "yesno-5",
+      "topic": "yesno",
+      "prompt": "קראו את הטקסט והחליטו: Yes או No?",
+      "display": "Maya has 2 sisters.",
+      "answer": "No",
+      "hint": "חזרו לטקסט ובדקו את המשפט מילה במילה.",
+      "explanation": "יש לה 2 אחים (2 brothers) ואין אחיות, לכן No.",
+      "choices": [
+        "Yes",
+        "No"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "passage": "Hello, my name is Maya. I am nine years old and I am in grade four. I go to \"Moon\" School. I live in Blue Town. I have 2 brothers. I have a rabbit and I want a parrot. My English teacher is nice. I have a test on Sunday.",
+      "speak": [
+        "Hello, my name is Maya. I am nine years old and I am in grade four. I go to \"Moon\" School. I live in Blue Town. I have 2 brothers. I have a rabbit and I want a parrot. My English teacher is nice. I have a test on Sunday.",
+        "Maya has 2 sisters."
+      ]
+    },
+    {
+      "id": "yesno-6",
+      "topic": "yesno",
+      "prompt": "קראו את הטקסט והחליטו: Yes או No?",
+      "display": "Maya has a test on Sunday.",
+      "answer": "Yes",
+      "hint": "חזרו לטקסט ובדקו את המשפט מילה במילה.",
+      "explanation": "כתוב I have a test on Sunday, לכן Yes.",
+      "choices": [
+        "Yes",
+        "No"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "passage": "Hello, my name is Maya. I am nine years old and I am in grade four. I go to \"Moon\" School. I live in Blue Town. I have 2 brothers. I have a rabbit and I want a parrot. My English teacher is nice. I have a test on Sunday.",
+      "speak": [
+        "Hello, my name is Maya. I am nine years old and I am in grade four. I go to \"Moon\" School. I live in Blue Town. I have 2 brothers. I have a rabbit and I want a parrot. My English teacher is nice. I have a test on Sunday.",
+        "Maya has a test on Sunday."
+      ]
+    },
+    {
+      "id": "yesno-7",
+      "topic": "yesno",
+      "prompt": "קראו את הטקסט והחליטו: Yes או No?",
+      "display": "Maya is in grade five.",
+      "answer": "No",
+      "hint": "חזרו לטקסט ובדקו את המשפט מילה במילה.",
+      "explanation": "כתוב grade four, כלומר כיתה ד׳, לכן No.",
+      "choices": [
+        "Yes",
+        "No"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "passage": "Hello, my name is Maya. I am nine years old and I am in grade four. I go to \"Moon\" School. I live in Blue Town. I have 2 brothers. I have a rabbit and I want a parrot. My English teacher is nice. I have a test on Sunday.",
+      "speak": [
+        "Hello, my name is Maya. I am nine years old and I am in grade four. I go to \"Moon\" School. I live in Blue Town. I have 2 brothers. I have a rabbit and I want a parrot. My English teacher is nice. I have a test on Sunday.",
+        "Maya is in grade five."
+      ]
+    },
+    {
+      "id": "yesno-8",
+      "topic": "yesno",
+      "prompt": "קראו את הטקסט והחליטו: Yes או No?",
+      "display": "Maya has one brother.",
+      "answer": "No",
+      "hint": "חזרו לטקסט ובדקו את המשפט מילה במילה.",
+      "explanation": "יש לה 2 אחים (2 brothers), לכן No.",
+      "choices": [
+        "Yes",
+        "No"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "passage": "Hello, my name is Maya. I am nine years old and I am in grade four. I go to \"Moon\" School. I live in Blue Town. I have 2 brothers. I have a rabbit and I want a parrot. My English teacher is nice. I have a test on Sunday.",
+      "speak": [
+        "Hello, my name is Maya. I am nine years old and I am in grade four. I go to \"Moon\" School. I live in Blue Town. I have 2 brothers. I have a rabbit and I want a parrot. My English teacher is nice. I have a test on Sunday.",
+        "Maya has one brother."
+      ]
+    },
+    {
+      "id": "sentences-1",
+      "topic": "sentences",
+      "prompt": "איך כותבים: \"אני בן עשר\"?",
+      "display": "",
+      "answer": "I am ten years old.",
+      "hint": "באנגלית אומרים I am ... ולא I have ...",
+      "explanation": "אומרים I am ten years old.",
+      "choices": [
+        "I have ten years old.",
+        "I am ten years old.",
+        "I am ten year old.",
+        "I ten years old."
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "noDisplay": true,
+      "speakChoices": true,
+      "speakAnswer": "I am ten years old."
+    },
+    {
+      "id": "sentences-2",
+      "topic": "sentences",
+      "prompt": "איך כותבים: \"קוראים לי דן\"?",
+      "display": "",
+      "answer": "My name is Dan.",
+      "hint": "מתחילים ב־My name is.",
+      "explanation": "אומרים My name is Dan.",
+      "choices": [
+        "My name Dan.",
+        "I name is Dan.",
+        "My name is Dan.",
+        "Name is my Dan."
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "noDisplay": true,
+      "speakChoices": true,
+      "speakAnswer": "My name is Dan."
+    },
+    {
+      "id": "sentences-3",
+      "topic": "sentences",
+      "prompt": "איך כותבים: \"אני גר בעיירה\"?",
+      "display": "",
+      "answer": "I live in a town.",
+      "hint": "אומרים I live in.",
+      "explanation": "אומרים I live in a town.",
+      "choices": [
+        "I live on town.",
+        "I living in town.",
+        "I live in a town.",
+        "I am live in a town."
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "noDisplay": true,
+      "speakChoices": true,
+      "speakAnswer": "I live in a town."
+    },
+    {
+      "id": "sentences-4",
+      "topic": "sentences",
+      "prompt": "איך כותבים: \"יש לי שתי אחיות\"?",
+      "display": "",
+      "answer": "I have two sisters.",
+      "hint": "אומרים I have ... כשיש לנו משהו.",
+      "explanation": "אומרים I have two sisters.",
+      "choices": [
+        "I am two sisters.",
+        "I have two sisters.",
+        "I have sisters two.",
+        "I two sisters have."
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "noDisplay": true,
+      "speakChoices": true,
+      "speakAnswer": "I have two sisters."
+    },
+    {
+      "id": "sentences-5",
+      "topic": "sentences",
+      "prompt": "איך כותבים: \"אני לומד בבית ספר שמש\"?",
+      "display": "",
+      "answer": "I go to Sunrise School.",
+      "hint": "אומרים I go to ... School.",
+      "explanation": "אומרים I go to Sunrise School.",
+      "choices": [
+        "I go to Sunrise School.",
+        "I go Sunrise School.",
+        "I going to Sunrise School.",
+        "I am to Sunrise School."
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "noDisplay": true,
+      "speakChoices": true,
+      "speakAnswer": "I go to Sunrise School."
+    },
+    {
+      "id": "sentences-6",
+      "topic": "sentences",
+      "prompt": "איך כותבים: \"המורה שלי נחמדה\"?",
+      "display": "",
+      "answer": "My teacher is nice.",
+      "hint": "צריך את המילה is באמצע.",
+      "explanation": "אומרים My teacher is nice.",
+      "choices": [
+        "My teacher nice.",
+        "My teacher is nice.",
+        "Teacher my is nice.",
+        "My teacher are nice."
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "noDisplay": true,
+      "speakChoices": true,
+      "speakAnswer": "My teacher is nice."
+    },
+    {
+      "id": "sentences-7",
+      "topic": "sentences",
+      "prompt": "איך כותבים: \"אני רוצה אופניים\"?",
+      "display": "",
+      "answer": "I want a bike.",
+      "hint": "אחרי I לא מוסיפים s לפועל.",
+      "explanation": "אומרים I want a bike.",
+      "choices": [
+        "I want a bike.",
+        "I wants a bike.",
+        "I am want a bike.",
+        "I a bike want."
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "noDisplay": true,
+      "speakChoices": true,
+      "speakAnswer": "I want a bike."
+    },
+    {
+      "id": "master-1",
+      "topic": "master",
+      "prompt": "איך שואלים \"איפה אתה גר\"?",
+      "display": "בחרו את השאלה הנכונה",
+      "answer": "Where do you live?",
+      "hint": "מתחילים ב־Where.",
+      "explanation": "Where = איפה.",
+      "choices": [
+        "What's your name?",
+        "Where do you live?",
+        "How old are you?",
+        "Where is your name?"
+      ],
+      "noDisplay": true,
+      "ltr": true,
+      "speakChoices": true,
+      "speakAnswer": "Where do you live?"
+    },
+    {
+      "id": "master-2",
+      "topic": "master",
+      "prompt": "מה פירוש המשפט?",
+      "display": "I am ten years old and I am in grade four.",
+      "answer": "אני בן עשר ואני בכיתה ד׳",
+      "hint": "years old = שנים, grade = כיתה.",
+      "explanation": "אני בן עשר ואני בכיתה ד׳.",
+      "choices": [
+        "אני בן עשר ואני בכיתה ד׳",
+        "יש לי עשרה אחים ואני בכיתה ד׳",
+        "אני בן שבע ואני בכיתה ט׳",
+        "אני גר בעיירה ואני בכיתה ד׳"
+      ],
+      "ltr": false,
+      "speak": [
+        "I am ten years old and I am in grade four."
+      ]
+    },
+    {
+      "id": "master-3",
+      "topic": "master",
+      "prompt": "איזה משפט נכון?",
+      "display": "בחרו",
+      "answer": "My English teacher is nice.",
+      "hint": "מתחילים ב־My ואחריו teacher.",
+      "explanation": "My English teacher is nice = המורה שלי לאנגלית נחמדה.",
+      "choices": [
+        "English teacher my is nice.",
+        "My English teacher is nice.",
+        "My English teacher nice is.",
+        "Teacher English my nice."
+      ],
+      "noDisplay": true,
+      "ltr": true,
+      "speakChoices": true,
+      "speakAnswer": "My English teacher is nice."
+    },
+    {
+      "id": "master-4",
+      "topic": "master",
+      "prompt": "כתבו באנגלית: ציפור",
+      "display": "ציפור",
+      "answer": "bird",
+      "hint": "האות הראשונה היא b.",
+      "explanation": "ציפור באנגלית: bird.",
+      "input": "text",
+      "speakAnswer": "bird"
+    },
+    {
+      "id": "master-5",
+      "topic": "master",
+      "prompt": "כתבו באנגלית: לעוף",
+      "display": "לעוף",
+      "answer": "fly",
+      "hint": "המילה קצרה וצריך בה y.",
+      "explanation": "לעוף באנגלית: fly.",
+      "input": "text",
+      "speakAnswer": "fly"
+    },
+    {
+      "id": "master-6",
+      "topic": "master",
+      "prompt": "מה פירוש?",
+      "display": "family",
+      "answer": "משפחה",
+      "hint": "זה כולל אמא, אבא, אח ואחות.",
+      "explanation": "family = משפחה.",
+      "choices": [
+        "חבר",
+        "משפחה",
+        "שיעור",
+        "עיירה"
+      ],
+      "ltr": true,
+      "speak": [
+        "family"
+      ]
+    },
+    {
+      "id": "master-7",
+      "topic": "master",
+      "prompt": "מה פירוש?",
+      "display": "want",
+      "answer": "רוצה",
+      "hint": "I want a bike.",
+      "explanation": "want = רוצה.",
+      "choices": [
+        "לדבר",
+        "לעוף",
+        "רוצה",
+        "נחמד"
+      ],
+      "ltr": true,
+      "speak": [
+        "want"
+      ]
+    },
+    {
+      "id": "master-8",
+      "topic": "master",
+      "prompt": "השלימו את השיחה",
+      "display": "— Hello!  — Hi! ____?  — My name is Dan.",
+      "answer": "What's your name",
+      "hint": "מה השאלה שהתשובה שלה היא \"My name is Dan\"?",
+      "explanation": "התשובה מספרת את שמו, ולכן השאלה היא What's your name?",
+      "choices": [
+        "What's your name",
+        "How old are you",
+        "Where do you live",
+        "Is it nice"
+      ],
+      "ltr": true,
+      "textDisplay": true,
+      "speak": [
+        "Hello! Hi! blank? My name is Dan."
+      ],
+      "speakChoices": true,
+      "speakAnswer": "What's your name"
+    }
+  ],
+  "topics": [
+    {
+      "id": "phrases",
+      "title": "שלום, איך קוראים לך?",
+      "icon": "☺",
+      "description": "ביטויי היכרות: שם, מקום מגורים וגיל"
+    },
+    {
+      "id": "words-a",
+      "title": "מילים של בית הספר",
+      "icon": "⌂",
+      "description": "friend, grade, house, new, school, teacher, town"
+    },
+    {
+      "id": "words-b",
+      "title": "משפחה, ציפורים ושיעור",
+      "icon": "♪",
+      "description": "brother, sister, bird, English, family, fly, lesson, nice, talk, want"
+    },
+    {
+      "id": "spell",
+      "title": "כותבים באנגלית",
+      "icon": "✎",
+      "description": "רואים מילה בעברית וכותבים אותה באנגלית"
+    },
+    {
+      "id": "fill",
+      "title": "משלימים משפט",
+      "icon": "…",
+      "description": "בוחרים את המילה שחסרה במשפט"
+    },
+    {
+      "id": "dialogue",
+      "title": "משלימים שיחה",
+      "icon": "☏",
+      "description": "שאלה ותשובה שמתאימות זו לזו"
+    },
+    {
+      "id": "card",
+      "title": "כרטיס פרטים אישיים",
+      "icon": "▭",
+      "description": "משלימים טקסט קצר עם בנק מילים"
+    },
+    {
+      "id": "yesno",
+      "title": "Yes או No?",
+      "icon": "✓✗",
+      "description": "קוראים טקסט קצר ובודקים משפטים"
+    },
+    {
+      "id": "sentences",
+      "title": "בונים משפט נכון",
+      "icon": "≡",
+      "description": "בוחרים את המשפט הנכון באנגלית"
+    },
+    {
+      "id": "master",
+      "title": "אתגר האלופים",
+      "icon": "⚑",
+      "description": "משלבים את כל מה שלמדנו"
+    }
+  ],
+  "key": "kids-learn-games.english-grade4.v1"
+}

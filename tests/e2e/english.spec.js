@@ -14,7 +14,7 @@ test('portal card, direct URL, scope and no workbook link for the English game',
  await page.getByRole('link',{name:/מתחילים באנגלית/}).click();
  await page.reload();
  await expect(page.locator('h1')).toHaveText('מסע באנגלית');
- await expect(page.locator('[data-topic]')).toHaveCount(10);
+ await expect(page.locator('[data-topic]')).toHaveCount(15);
  await expect(page.locator('.score-strip')).toContainText(String(questions.length));
  await expect(page.locator('.workbook-link')).toHaveCount(0);
  await expect(page.locator('.hero')).toContainText('החוברת הצהובה');
@@ -23,6 +23,7 @@ test('portal card, direct URL, scope and no workbook link for the English game',
 });
 
 test('every English question can be solved through the real UI, wrong answers are rejected',async({page})=>{
+ test.setTimeout(120000);
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.setViewportSize({width:390,height:844});
  const shots=new Set();
@@ -30,6 +31,7 @@ test('every English question can be solved through the real UI, wrong answers ar
   await page.goto('/games/english-grade4/');
   await page.locator(`[data-topic=${topic}]`).click();
   const qs=questions.filter(q=>q.topic===topic);
+  if(topic.startsWith('wb-'))await page.locator('#start-reading-challenges').click();
   for(let i=0;i<qs.length;i++){
    const q=qs[i];
    if(q.input==='text'){

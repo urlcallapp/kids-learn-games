@@ -12,7 +12,7 @@ import {createHash} from 'node:crypto';
 // images) stay unversioned on purpose so they keep caching well.
 
 const gameIds = readdirSync('games', {withFileTypes: true}).filter(e => e.isDirectory()).map(e => e.name);
-const files = ['index.html', 'portal.js', 'game.js',
+const files = ['index.html', 'portal.js', 'game.js', 'style.css', 'games.js', 'games/english-grade4/workbook.js',
   ...gameIds.flatMap(id => [`games/${id}/index.html`, `games/${id}/config.js`])];
 
 const refPattern = /(?:src|href|data-config|from|export\s[^'"]*from)\s*=?\s*['"]?\(?['"]([^'"]+\.(?:js|css))(?:\?v=([^'")]+))?['"]/g;

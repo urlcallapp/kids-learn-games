@@ -83,3 +83,7 @@ Each game defines `tags` in `games.js`. The tag filter is derived only from thes
 ## English game (`games/english-grade4/`)
 
 Standalone dataset like `times-table`: its own topics, questions and `checkAnswer`, no workbook and no `meta.source`. It extends the shared engine with three optional question fields: `input: 'text'` (a typed English answer, compared ignoring case, spaces and final punctuation), `ltr: true` (show English text left to right) and `passage` (a reading text shown above the question). `noDisplay: true` hides the display box. The names, school and town in the texts are invented. Storage key: `kids-learn-games.english-grade4.v1`.
+
+### Yellow workbook reading area
+
+The English map has optional `meta.sections`; ten original review stations remain intact and five workbook stations live in a separate yellow area. `workbook.js` holds the fictional textbook characters and 48 new exercises. Topics with `reading` show a read-first screen with browser speech before starting their challenges. Each challenge retains a collapsible passage and read-aloud controls. The house description is a text adaptation of the photographed illustration. No source photos or personal child details are published. `reading: true` on a question enables the collapsible passage. Existing storage keys and question IDs are unchanged. Other games do not opt into sections or reading screens.
